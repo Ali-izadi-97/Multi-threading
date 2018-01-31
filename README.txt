@@ -6,10 +6,10 @@ MULTI-THREADING IN JAVA
 THREAD CLASS METHODS
 --------------------
 
-PUBLIC VOID START(): START A THREAD BY CALLING ITS RUN() METHOD
-PUBLIC VOID RUN(): ENTRY POINT FOR THE THREAD
-PUBLIC FINAL VOID SETNAME(STRING NAME): SET THE NAME OF THE THREAD
-PUBLIC FINAL VOID SETPRIORITY(INT PRIORITY): TO SET THE PRIORITY OF THE THREAD
+public void start(): START A THREAD BY CALLING ITS run() METHOD
+public void run(): ENTRY POINT FOR THE THREAD
+public final vod setName(String tName): SET THE NAME OF THE THREAD
+public final vod setPriority(int tPriority): TO SET THE PRIORITY OF THE THREAD
 PUBLIC FINAL VOID SETDAEMON(BOOLEAN ON): A PARAMETER OF TRUE DENOTES THIS THREAD AS A DAEMON THREAD.
 VOID JOIN(LONG MILLISEC): WAIT FOR A THREAD TO TERMINATE. THIS METHOD WHEN CALLED FROM THE PARENT THREAD MAKES PARENT THREAD WAIT TILL CHILD THREAD TERMINATES. THE CURRENT THREAD INVOKES THIS METHOD ON A SECOND THREAD, CAUSING THE CURRENT THREAD TO BLOCK UNTIL THE SECOND THREAD TERMINATES OR THE SPECIFIED NUMBER OF MILLISECONDS PASSES.
 PUBLIC VOID INTERRUPT(): INTERRUPTS THIS THREAD, CAUSING IT TO CONTINUE EXECUTION IF IT WAS BLOCKED FOR ANY REASON.
@@ -127,10 +127,10 @@ ON THE OTHER HAND IF THE RUN() METHOD OF THESE THREADS ARE BEING CALLED DIRECTLY
 
 
 
-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
 
 
-Object level Locking vs. Class level Locking in Java
+OBJECT LEVEL LOCKING VS. CLASS LEVEL LOCKING IN JAVA
 ----------------------------------------------------
 
 Synchronization refers to multi-threading. A synchronized block of code can only be
@@ -138,7 +138,7 @@ executed by one thread at a time.
 
 Java supports multiple threads to be executed. This may cause two or more threads to
 access the same fields or objects. Synchronization is a process which keeps all concurrent
-threads in execution to be in synch. Synchronization avoids memory consistence errors caused
+threads in execution to be in sync. Synchronization avoids memory consistence errors caused
 due to inconsistent view of shared memory. When a method is declared as synchronized; the
 thread holds the monitor for that method’s object If another thread is executing the
 synchronized method, your thread is blocked until that thread releases the monitor.
@@ -149,7 +149,8 @@ or attributes in class definition.
 
 
 
-Object level locking
+
+OBJECT LEVEL LOCKING
 --------------------
 
 Object level locking is mechanism when you want to synchronize a non-static method or
@@ -163,7 +164,9 @@ public class DemoClass
     public synchronized void demoMethod(){}
 }
 
-or
+
+
+OR,
 
 public class DemoClass
 {
@@ -191,7 +194,7 @@ public class DemoClass
 
 
 
-Class level locking
+CLASS LEVEL LOCKING
 -------------------
 
 Class level locking prevents multiple threads to enter in synchronized block in any of
@@ -267,7 +270,7 @@ i. Do not synchronize on non final field on synchronized block in Java. because 
    non final field may change any time and then different thread might synchronizing on
    different objects i.e. no synchronization at all. Best is to use String class, which is
    already immutable and declared final.
---------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
 
 
 
