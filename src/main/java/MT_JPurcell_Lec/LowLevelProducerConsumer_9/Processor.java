@@ -40,6 +40,7 @@ public class Processor {
     public void consume() throws InterruptedException {
 
         Random random = new Random();
+        
         while (true) {
           
             synchronized (lock) {

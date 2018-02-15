@@ -1,15 +1,19 @@
 package Deadlock_11;
 
-/**
- * Source: http://www.herongyang.com/Java/Deadlock-What-Is-Deadlock.html
- * <p>
- * <a href="https://wikipedia.org/wiki/Deadlock">Deadlock</a>
- * is a programming situation where two or more threads are blocked
- * forever, this situation arises with at least two threads and two or more
- * resources.
- *
- * @author Z.B. Celik <celik.berkay@gmail.com>
- */
+/*
+Deadlock: A state of execution when 2 or more threads are all put on hold, because 
+each of them is holding a synchronization lock while waiting for another lock. The
+lock each thread is waiting for is held by one of the other threads. So none of threads 
+can move forward.
+
+By definition, deadlock can only happen when the program is running multiple threads, 
+and multiple locks are being used by multiple threads. Therefore:
+
+A single-threaded program will never have deadlocks.
+A program with one lock will never have deadlocks.
+Here is a simple program to demonstrate a deadlock with two threads and 
+two locks:
+*/
 
 
 public class SimpleDeadLock {
@@ -22,11 +26,14 @@ public class SimpleDeadLock {
 
 
     public static void main(String[] a) {
+
         Thread t1 = new Thread1();
         Thread t2 = new Thread2();
+
         t1.start();
         t2.start();
     }
+
 
     private static class Thread1 extends Thread {
 

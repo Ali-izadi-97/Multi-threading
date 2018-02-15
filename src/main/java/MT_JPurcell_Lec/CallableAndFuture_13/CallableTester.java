@@ -76,6 +76,8 @@ class CallableImpl implements Callable<Integer> {
 }
 
 
+
+
 public class CallableTester {
 
 
@@ -87,7 +89,12 @@ public class CallableTester {
 
         try {
             System.out.println("Future value: " + future.get());
-        } catch (Exception ignored) {}
+        } 
+
+        catch (Exception ignored) {
+            // some code 
+        }
+
         executor.shutdown();
         executor.awaitTermination(1, TimeUnit.HOURS);
     }

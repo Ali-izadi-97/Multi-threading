@@ -4,7 +4,9 @@ package ReentrantLocks_10;
 
 // the ReentrantLock 
 // -----------------
+
 /*
+
 A reentrant mutual exclusion Lock with the same basic behavior and semantics as 
 the implicit monitor lock accessed using synchronized methods and statements, but 
 with extended capabilities.
@@ -27,6 +29,7 @@ progressing and not currently holding the lock. Also note that the untimed tryLo
 method does not honor the fairness setting. It will succeed if the lock is available 
 even if other threads are waiting.
 */
+
 
 
 /**
@@ -61,8 +64,8 @@ even if other threads are waiting.
  * thread. Otherwise this lock does not guarantee any particular access order."
  * </em>
  * </li>
- * <li>Synchronized blocks are unfair.</li>
- * <li>The ability to check if the lock is being
+ * <li> Synchronized blocks are unfair.</li>
+ * <li> The ability to check if the lock is being
  * held.</li>
  * <li>The ability to get the list of threads waiting on the lock.</li>
  * </ul>
@@ -126,7 +129,6 @@ public class App {
                 }
             }
         });
-
 
         t1.start();
         t2.start();

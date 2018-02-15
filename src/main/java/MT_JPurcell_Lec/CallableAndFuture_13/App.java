@@ -3,6 +3,12 @@ package CallableAndFuture_13;
 import java.util.Random;
 import java.util.concurrent.*;
 
+
+// -------------------
+// Callable and Future 
+// -------------------
+
+
 /**
  * {@link java.util.concurrent.Callable} and
  * {@link java.util.concurrent.Future}
@@ -35,7 +41,6 @@ import java.util.concurrent.*;
 
 
 public class App {
-
 
 
     public static void main(String[] args) throws InterruptedException {
@@ -71,14 +76,12 @@ public class App {
         });
 
 
-
         executor.shutdown();
 //        executor.awaitTermination(1, TimeUnit.DAYS);
 
         try {
             //get returned value from call()
             System.out.println("Result is: " + future.get());
-
         } 
 
         catch (InterruptedException ignored) {

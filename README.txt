@@ -55,7 +55,7 @@ JAVA THREAD PRIORITIES ARE IN THE RANGE BETWEEN MIN_PRIORITY (A CONSTANT OF 1) A
 
 
 THREAD SYNCHRONIZATION
-----------------------
+——————————————————————
 
 WHEN TWO OR MORE THREADS NEED ACCESS TO A SHARED RESOURCE THERE SHOULD BE SOME WAY THAT THE RESOURCE WILL BE USED ONLY BY ONE RESOURCE AT A TIME. THE PROCESS TO ACHIEVE THIS IS CALLED SYNCHRONIZATION. ONCE A THREAD IS INSIDE A SYNCHRONIZED METHOD, NO OTHER THREAD CAN CALL ANY OTHER SYNCHRONIZED METHOD ON THE SAME OBJECT. TO UNDERSTAND SYNCHRONIZATION JAVA HAS A CONCEPT OF MONITOR. MONITOR CAN BE THOUGHT OF AS A BOX WHICH CAN HOLD ONLY ONE THREAD. ONCE A THREAD ENTERS THE MONITOR ALL THE OTHER THREADS HAVE TO WAIT UNTIL THAT THREAD EXITS THE MONITOR.
 
@@ -144,8 +144,82 @@ ON THE OTHER HAND IF THE RUN() METHOD OF THESE THREADS ARE BEING CALLED DIRECTLY
 -----------------------------------------------------------------------------------------
 
 
+
+
+————————————————————————————————————————————————————————————————————————————————————————
+
+———————————————————
+CONCURRENCY CLASSES 
+———————————————————
+
+BlockingQueue
+
+ArrayBlockingQueue
+
+DelayQueue
+
+LinkedBlockingQueue
+
+PriorityBlockingQueue
+
+SynchronousQueue
+
+BlockingDeque
+
+LinkedBlockingDeque
+
+ConcurrentMap
+
+ConcurrentNavigableMap
+
+CountDownLatch
+
+CyclicBarrier
+
+Exchanger
+
+Semaphore
+
+ExecutorService
+
+ThreadPoolExecutor
+
+ScheduledExecutorService
+
+Java Fork and Join using ForkJoinPool
+
+Lock
+
+ReadWriteLock
+
+AtomicBoolean
+
+AtomicInteger
+
+AtomicLong
+
+AtomicReference
+
+AtomicStampedReference
+
+AtomicIntegerArray
+
+AtomicLongArray
+
+AtomicReferenceArray
+————————————————————————————————————————————————————————————————————————————————————————
+
+
+
+
+
+
+
+
+
+
 OBJECT LEVEL LOCKING VS. CLASS LEVEL LOCKING IN JAVA
-----------------------------------------------------
+————————————————————————————————————————————————————
 
 Synchronization refers to multi-threading. A synchronized block of code can only be
 executed by one thread at a time.
@@ -308,6 +382,115 @@ i. Do not synchronize on non final field on synchronized block in Java. because 
    already immutable and declared final.
 
 ----------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+————————————————————————————————————————————————————————————————————————————————————————
+
+———————————————————————————————
+JAVA CONCURRENCY - JAKOB JENKOV
+———————————————————————————————
+
+MULTITHREADING BENEFITS
+
+MULTITHREADING COSTS
+
+CONCURRENCY MODELS
+
+SAME-THREADING
+
+CONCURRENCY VS. PARALLELISM
+
+CREATING AND STARTING JAVA THREADS
+
+RACE CONDITIONS AND CRITICAL SECTIONS
+
+THREAD SAFETY AND SHARED RESOURCES
+
+THREAD SAFETY AND IMMUTABILITY
+
+JAVA MEMORY MODEL
+
+JAVA SYNCHRONIZED BLOCKS
+
+JAVA VOLATILE KEYWORD
+
+JAVA THREADLOCAL
+
+THREAD SIGNALING
+
+DEADLOCK
+
+DEADLOCK PREVENTION
+
+STARVATION AND FAIRNESS
+
+NESTED MONITOR LOCKOUT
+
+SLIPPED CONDITIONS
+
+LOCKS IN JAVA
+
+READ / WRITE LOCKS IN JAVA
+
+REENTRANCE LOCKOUT
+
+SEMAPHORES
+
+BLOCKING QUEUES
+
+THREAD POOLS
+
+COMPARE AND SWAP
+
+ANATOMY OF A SYNCHRONIZER
+
+NON-BLOCKING ALGORITHMS
+
+AMDAHL'S LAW
+
+JAVA CONCURRENCY REFERENCES
+————————————————————————————————————————————————————————————————————————————————————————
+
+
+
+
+
+
+
+JAVA CONCURRENCY - ABHI 
+———————————————————————
+
+JAVA 5 CONCURRENCY - ABHI ON JAVA
+
+JAVA 5 CONCURRENCY: SELECTING LOCKS - ABHI ON JAVA
+
+JAVA 5 CONCURRENCY: SELECTING SYNCHRONIZERS - ABHI ON JAVA
+
+JAVA 5 CONCURRENCY: SYNCHRONIZERS - ABHI ON JAVA
+
+JAVA 5 CONCURRENCY: CONDITIONS - ABHI ON JAVA
+
+JAVA 5 CONCURRENCY: READER-WRITER LOCKS - ABHI ON JAVA
+
+JAVA 5 CONCURRENCY: LOCKS - ABHI ON JAVA
+
+JAVA 5 CONCURRENCY: CALLABLE AND FUTURE - ABHI ON JAVA
+
+JAVA 5 EXECUTORS: THREADPOOL - ABHI ON JAVA
+
+JAVA 5: NEW FEATURES IN CONCURRENCY - ABHI ON JAVA
+
+JAVA: HANDLING INTERRUPTS - ABHI ON JAVA
+————————————————————————————————————————————————————————————————————————————————————————
+
+
+
+
 
 
 

@@ -45,6 +45,7 @@ public class Connection {
     public void connect() {
 
         try {
+
             // get permit decrease the sem value, if 0 wait for release
             sem.acquire();
 

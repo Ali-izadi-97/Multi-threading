@@ -6,23 +6,6 @@ import java.util.concurrent.locks.ReentrantLock;
 
 
 
-/**
- * <a href="https://wikipedia.org/wiki/Deadlock">Deadlock</a>
- * <br><br>
- * Codes with minor comments are from
- * <a href="http://www.caveofprogramming.com/youtube/">
- * <em>http://www.caveofprogramming.com/youtube/</em>
- * </a>
- * <br>
- * also freely available at
- * <a href="https://www.udemy.com/java-multithreading/?couponCode=FREE">
- * <em>https://www.udemy.com/java-multithreading/?couponCode=FREE</em>
- * </a>
- * @author Z.B. Celik <celik.berkay@gmail.com>
- */
-
-
-
 @SuppressWarnings("InfiniteLoopStatement")
 public class Runner {
 
@@ -32,6 +15,7 @@ public class Runner {
 
     private Lock lock1 = new ReentrantLock();
     private Lock lock2 = new ReentrantLock();
+
 
     //don't hold several locks at once. If you do, always acquire the locks in the same order
     //try to get the both locks
@@ -47,11 +31,13 @@ public class Runner {
 
                 /**
                  * tryLock() which will only acquire a lock if it’s available
-                 * and not already acquired by another thread and tryLock(long
-                 * time,TimeUnit unit), which will try to acquire a lock and, if
+                 * and not already acquired by another thread and 
+                 *
+                 * tryLock(long time,TimeUnit unit), which will try to acquire a lock and, if
                  * it's unavailable wait for the specified timer to expire
                  * before giving up
                  */
+
                 gotFirstLock = firstLock.tryLock();
                 gotSecondLock = secondLock.tryLock();
             } 

@@ -28,17 +28,21 @@ class MyCallable implements Callable<Integer> {
         System.out.println("Sum in Callable.Call() " + sum);
         return sum;
     }
-
 }
+
 
 public class App2 {
 
+
+
     public static void main(String[] args) throws InterruptedException {
+
         ArrayList<Integer> list = new ArrayList<>();
         ExecutorService executor = Executors.newCachedThreadPool();
         Future<Integer> future;
 
         for (int i = 1; i < 10; i++) {
+
             future = executor.submit(new MyCallable(i));
             try {
                 list.add(future.get());

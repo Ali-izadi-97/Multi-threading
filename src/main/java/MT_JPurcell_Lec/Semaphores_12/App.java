@@ -9,7 +9,6 @@ import java.util.concurrent.TimeUnit;
 
 
 /*
-
 Before obtaining an item each thread must acquire a permit from the semaphore, 
 guaranteeing that an item is available for use. When the thread has finished 
 with the item it is returned back to the pool and a permit is returned to the 
@@ -19,6 +18,7 @@ to the pool. The semaphore encapsulates the synchronization needed to restrict a
 to the pool, separately from any synchronization needed to maintain the consistency of 
 the pool itself.
 
+
 A semaphore initialized to one, and which is used such that it only has at most one 
 permit available, can serve as a mutual exclusion lock. This is more commonly known 
 as a binary semaphore, because it only has two states: one permit available, or zero 
@@ -26,6 +26,7 @@ permits available. When used in this way, the binary semaphore has the property
 (unlike many Lock implementations), that the "lock" can be released by a thread other 
 than the owner (as semaphores have no notion of ownership). This can be useful in some 
 specialized contexts, such as deadlock recovery.
+
 
 The constructor for this class optionally accepts a fairness parameter. When set false, 
 this class makes no guarantees about the order in which threads acquire permits. In 
@@ -37,7 +38,7 @@ permits in the order in which their invocation of those methods was processed
 (first-in-first-out; FIFO). Note that FIFO ordering necessarily applies to specific 
 internal points of execution within these methods. So, it is possible for one thread 
 to invoke acquire before another, but reach the ordering point after the other, and 
-similarly upon return from the method. Also note that the untimed tryAcquire methods 
+similarly upon return from the method. Also note that the untimed  "tryAcquire"  methods 
 do not honor the fairness setting, but will take any permits that are available.
 
 Generally, semaphores used to control resource access should be initialized as fair, 
@@ -51,8 +52,7 @@ used without fairness set true.
 
 Memory consistency effects: Actions in a thread prior to calling a "release" method such 
 as release() happen-before actions following a successful "acquire" method such as 
-acquire() in another thread.
-*/
+acquire() in another thread.*/
 
 
 

@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * Source:<em>
  * http://www.journaldev.com/2377/java-lock-example-and-concurrency-lock-vs-synchronized</em>
@@ -47,7 +48,10 @@ import java.util.concurrent.locks.ReentrantLock;
  *
  * @author Z.B. Celik <celik.berkay@gmail.com>
  */
+
+
 public class Runner {
+
 
     private int count = 0;
     private Lock lock = new ReentrantLock();
@@ -74,7 +78,6 @@ public class Runner {
             lock.unlock();
         }
     }
-
 
     public void secondThread() throws InterruptedException {
 
