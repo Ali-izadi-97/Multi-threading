@@ -399,7 +399,47 @@ MULTITHREADING BENEFITS
 
 MULTITHREADING COSTS
 
+
+———————————————————————————————————————————————————————————
+——————————————————
 CONCURRENCY MODELS
+——————————————————
+———————————————————————————————————————————————————————————
+CONCURRENCY MODELS AND DISTRIBUTED SYSTEM SIMILARITIES
+
+PARALLEL WORKERS
+
+PARALLEL WORKERS ADVANTAGES
+
+PARALLEL WORKERS DISADVANTAGES
+
+SHARED STATE CAN GET COMPLEX
+
+STATELESS WORKERS
+
+JOB ORDERING IS NONDETERMINISTIC
+
+ASSEMBLY LINE
+
+REACTIVE, EVENT DRIVEN SYSTEMS
+
+ACTORS VS. CHANNELS
+
+ASSEMBLY LINE ADVANTAGES
+
+NO SHARED STATE
+
+STATEFUL WORKERS
+
+BETTER HARDWARE CONFORMITY
+
+JOB ORDERING IS POSSIBLE
+
+ASSEMBLY LINE DISADVANTAGES
+
+FUNCTIONAL PARALLELISM
+———————————————————————————————————————————————————————————
+
 
 SAME-THREADING
 
@@ -457,6 +497,26 @@ JAVA CONCURRENCY REFERENCES
 ————————————————————————————————————————————————————————————————————————————————————————
 
 
+———————————————————————————————————————————————————————————————————————————————————————
+
+———————————————————————————————
+JAVA NETWORKING - JAKOB JENKOV 
+———————————————————————————————
+
+JAVA NETWORKING: SOCKET
+
+JAVA NETWORKING: SERVERSOCKET
+
+JAVA NETWORKING: UDP DATAGRAMSOCKET
+
+JAVA NETWORKING: URL + URLCONNECTION
+
+JAVA NETWORKING: JarURLConnection
+
+JAVA NETWORKING: INETADDRESS
+
+JAVA NETWORKING: PROTOCOL DESIGN
+———————————————————————————————————————————————————————————————————————————————————————
 
 
 
@@ -503,7 +563,7 @@ CONCURRENCY (PARRELLAL COMPUTING) IN JAVA
 
 
 
-MULTITHREADING AND PARALLEL COMPUTATION IN JAVA @ HOLCZER BALAZS
+MULTITHREADING AND PARALLEL COMPUTATION IN JAVA -  UDEMY/ HOLCZER BALAZS
 
 
 
@@ -563,4 +623,27 @@ CLOUD COMPUTING APPLICATIONS, PART 2: BIG DATA AND APPLICATIONS IN THE CLOUD - U
 CLOUD NETWORKING - UNI. OF ILLINOIS/ COURSERA 
 
 CLOUD COMPUTING PROJECT - UNI. OF ILLINOIS/ COURSERA 
+
+
+
+
+
+—————
+BOOKS 
+—————
+
+————————————————————————————————————————————————————————————————————————————————————————
+JAVA CONCURRENCY IN PRACTICE - BRIAN GOETZ
+
+SEVEN CONCURRENCY MODELS IN SEVEN WEEKS: WHEN THREADS UNRAVEL - PAUL BUTCHER 
+————————————————————————————————————————————————————————————————————————————————————————
+
+
+
+
+
+
+
+
+
 
