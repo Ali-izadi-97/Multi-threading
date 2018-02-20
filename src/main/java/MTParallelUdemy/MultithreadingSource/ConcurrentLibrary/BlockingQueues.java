@@ -59,6 +59,7 @@ class SecondWorker implements Runnable {
 	}
 }
 
+
 public class BlockingQueues {
 
 	public static void main(String[] args) {
