@@ -31,12 +31,13 @@ class Processor implements Runnable {
 }
 
 
+
+
 // class for the main application 
 public class App {
 
 
     public static void main(String[] args) {
-
 
         CountDownLatch latch = new CountDownLatch(3);
         ExecutorService executor = Executors.newFixedThreadPool(3);
@@ -49,7 +50,8 @@ public class App {
 
         try {
             // Application’s main thread waits, till other service threads which are
-            // as an example responsible for starting framework services have completed started all services.
+            // as an example responsible for starting framework services have completed 
+            // started all services.
             latch.await();
         } 
 
@@ -60,3 +62,5 @@ public class App {
         System.out.println("Completed.");
     }
 }
+
+

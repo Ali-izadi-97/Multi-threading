@@ -5,7 +5,6 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 
-
 @SuppressWarnings("InfiniteLoopStatement")
 public class Runner {
 
@@ -41,7 +40,6 @@ public class Runner {
                 gotFirstLock = firstLock.tryLock();
                 gotSecondLock = secondLock.tryLock();
             } 
-
 
             finally {
 

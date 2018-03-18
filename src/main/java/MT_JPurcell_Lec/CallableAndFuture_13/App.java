@@ -4,6 +4,30 @@ import java.util.Random;
 import java.util.concurrent.*;
 
 
+/*
+/**
+ *  1.) ExecutorService es = Executors.newCachedThreadPool();
+ *      - going to return an executorService that can dynamically
+ *          reuse threads
+ *      - before starting a job -> it going to check whether there are any threads that
+ *          finished the job...reuse them
+ *      - if there are no waiting threads -> it is going to create another one 
+ *      - good for the processor ... effective solution !!!
+ *
+ *  2.) ExecutorService es = Executors.newFixedThreadPool(N);
+ *      - maximize the number of threads
+ *      - if we want to start a job -> if all the threads are busy, we have to wait for one
+ *          to terminate
+ *
+ *  3.) ExecutorService es = Executors.newSingleThreadExecutor();
+ *      It uses a single thread for the job
+ *
+ *      execute() -> runnable + callable
+ *      submit() -> runnable
+ *
+ */
+*/
+
 // -------------------
 // Callable and Future 
 // -------------------
@@ -44,6 +68,7 @@ public class App {
 
 
     public static void main(String[] args) throws InterruptedException {
+
         
         ExecutorService executor = Executors.newCachedThreadPool();
 
@@ -75,18 +100,15 @@ public class App {
             }
         });
 
-
         executor.shutdown();
-//        executor.awaitTermination(1, TimeUnit.DAYS);
+        // executor.awaitTermination(1, TimeUnit.DAYS);
 
         try {
             //get returned value from call()
             System.out.println("Result is: " + future.get());
         } 
 
-        catch (InterruptedException ignored) {
-        
-        } 
+        catch (InterruptedException ignored) { } 
 
         catch (ExecutionException e) {
             TimeoutException ex = (TimeoutException) e.getCause();

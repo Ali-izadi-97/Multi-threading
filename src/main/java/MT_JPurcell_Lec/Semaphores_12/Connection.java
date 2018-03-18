@@ -3,18 +3,19 @@ package Semaphores_12;
 import java.util.concurrent.Semaphore;
 
 
+
+
 public class Connection {
 
 
     private static Connection instance = new Connection();
 
-    /*
-    
-        //
-        limit connections to 10
-        // 
+    /*    
+    //
+    // limit connections to 10
+    // 
 
-    true means whichever thread gets first in the waiting pool (queue)
+    "true" means whichever thread gets first in the waiting pool (queue)
     waiting to acquire a resource, is first to obtain the permit.
 
     Note that I called it a pool!
@@ -27,8 +28,7 @@ public class Connection {
     
     But, it doesn't have to be that way if you don't set on the fairness. the JVM
     may schedule the waiting threads in some other manner that it sees best
-    (See the Java specifications for that).
-*/
+    (See the Java specifications for that).*/
 
 
     private Semaphore sem = new Semaphore(10, true);
@@ -60,7 +60,6 @@ public class Connection {
             sem.release();
         }
     }
-
 
     public void doConnect() {
 

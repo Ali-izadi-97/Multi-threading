@@ -24,7 +24,6 @@ package LowLevelProducerConsumer_9;
 public class App {
 
 
-
     public static void main(String[] args) throws InterruptedException {
 
         final Processor processor = new Processor();
@@ -39,7 +38,6 @@ public class App {
                 } catch (InterruptedException ignored) {}
             }
         });
-
 
         Thread t2 = new Thread(new Runnable() {
 

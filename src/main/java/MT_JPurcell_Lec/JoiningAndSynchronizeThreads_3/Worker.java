@@ -6,7 +6,6 @@ import java.util.logging.Logger;
 
 public class Worker {
 
-
     private int count = 0;
     
     /**
@@ -20,7 +19,6 @@ public class Worker {
         //Thread.sleep(1000);
         System.out.println("Thread in Progress: " + threadName + " and count is: " + count);
     }
-
 
     public void doWork() {
 

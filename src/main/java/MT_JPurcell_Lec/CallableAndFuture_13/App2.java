@@ -34,7 +34,6 @@ class MyCallable implements Callable<Integer> {
 public class App2 {
 
 
-
     public static void main(String[] args) throws InterruptedException {
 
         ArrayList<Integer> list = new ArrayList<>();

@@ -1,7 +1,7 @@
 package Deadlock_11;
 
-/*
-Deadlock: A state of execution when 2 or more threads are all put on hold, because 
+
+/* Deadlock: A state of execution when 2 or more threads are all put on hold, because 
 each of them is holding a synchronization lock while waiting for another lock. The
 lock each thread is waiting for is held by one of the other threads. So none of threads 
 can move forward.
@@ -12,8 +12,7 @@ and multiple locks are being used by multiple threads. Therefore:
 A single-threaded program will never have deadlocks.
 A program with one lock will never have deadlocks.
 Here is a simple program to demonstrate a deadlock with two threads and 
-two locks:
-*/
+two locks:*/
 
 
 public class SimpleDeadLock {
@@ -23,7 +22,6 @@ public class SimpleDeadLock {
     public static final Object lock2 = new Object();
 
     private int index;
-
 
     public static void main(String[] a) {
 
@@ -71,7 +69,9 @@ public class SimpleDeadLock {
                     Thread.sleep(10);
                 } 
 
-                catch (InterruptedException ignored) {}
+                catch (InterruptedException ignored) {
+                    // some code 
+                }
 
                 System.out.println("Thread 2: Waiting for lock 1...");
                 

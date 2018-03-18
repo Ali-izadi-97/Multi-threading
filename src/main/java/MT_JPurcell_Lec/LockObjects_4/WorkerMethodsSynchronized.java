@@ -26,6 +26,7 @@ public class WorkerMethodsSynchronized {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
         list1.add(random.nextInt(100));
     }
 
@@ -47,8 +48,10 @@ public class WorkerMethodsSynchronized {
     }
 
     public void main() {
+
         System.out.println("Starting ...");
         long start = System.currentTimeMillis();
+
         Thread t1 = new Thread(new Runnable() {
             public void run() {
                 process();

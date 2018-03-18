@@ -1,5 +1,6 @@
 package Deadlock_11;
 
+
 /**
  * It can occur in a situation when a thread is waiting for an object's lock,
  * that is acquired by another thread and the second thread is waiting for an
@@ -8,6 +9,7 @@ package Deadlock_11;
  * make sure that all locks are always taken in the same order by any thread,
  * deadlocks cannot occur.
  */
+
 
 public class App {
 

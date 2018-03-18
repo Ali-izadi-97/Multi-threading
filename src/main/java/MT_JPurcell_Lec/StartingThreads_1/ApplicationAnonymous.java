@@ -23,5 +23,4 @@ public class ApplicationAnonymous {
 
         thread1.start();
     }
-
 }

@@ -10,14 +10,12 @@ import java.util.Scanner;
 
 public class Processor {
 
-
     /*
      * public synchronized void getSomething(){ this.hello = "hello World"; }
      * public void getSomething(){ synchronized(this){ this.hello = "hello
      * World"; } }
      * two code blocks by specification, functionally identical.
      */
-
 
     public void produce() throws InterruptedException {
 
@@ -34,10 +32,13 @@ public class Processor {
         Thread.sleep(2000);
 
         synchronized (this) {
+
             System.out.println("Waiting for return key.");
             scanner.nextLine();
             System.out.println("Return key pressed.");
+
             notify();
+
             Thread.sleep(5000);
             System.out.println("Consumption done.");
         }

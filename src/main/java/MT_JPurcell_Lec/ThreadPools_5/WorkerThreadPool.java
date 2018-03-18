@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 
 
+
 class Worker implements Runnable {
 
 
@@ -32,7 +33,6 @@ class Worker implements Runnable {
             stageTwo();
         }
     }
-
 
     public void stageOne() {
 
@@ -59,6 +59,7 @@ class Worker implements Runnable {
         }
     }
 }
+
 
 public class WorkerThreadPool {
 
@@ -96,5 +97,4 @@ public class WorkerThreadPool {
         System.out.println("Time taken: " + (end - start));
         System.out.println("List1: " + worker.list1.size() + "; List2: " + worker.list2.size());
     }
-
 }

@@ -507,6 +507,51 @@ JAVA CONCURRENCY REFERENCES
 
 ———————————————————————————————————————————————————————————————————————————————————————
 
+
+——————————————————————————————————————————————————————————————————————————————
+
+—————————————————————————————————————————
+JAVA MULTITHREADED SERVERS - JAKOB JENKOV 
+—————————————————————————————————————————
+
+MULTITHREADED SERVERS IN JAVA
+
+SINGLETHREADED SERVER IN JAVA
+
+MULTITHREADED SERVER IN JAVA
+
+THREAD POOLED SERVER
+——————————————————————————————————————————————————————————————————————————————
+
+
+
+————————————————————————————————————————————————————————————————————————————————
+
+———————————————————————————————
+JAVA PERFORMANCE - JAKOB JENKOV 
+———————————————————————————————
+
+MODERN HARDWARE
+
+MEMORY MANAGEMENT FOR PERFORMANCE
+
+JMH - JAVA MICROBENCHMARK HARNESS
+
+JAVA RING BUFFER
+
+JAVA RESIZABLE ARRAY
+
+JAVA FOR VS. SWITCH PERFORMANCE
+
+JAVA ARRAYLIST VS. OPENARRAYLIST PERFORMANCE
+
+JAVA HIGH PERFORMANCE READ PATTERNS
+
+MICRO BATCHING
+————————————————————————————————————————————————————————————————————————————————
+
+
+
 ———————————————————————————————
 JAVA NETWORKING - JAKOB JENKOV 
 ———————————————————————————————
@@ -592,17 +637,38 @@ MANAGING THREADS IN JAVA - LYNDA
 
 
 —————————————————————————————————————————————————————————————————————————————————————
-
 MULTITHREADING AND PARALLEL COMPUTATION IN JAVA -  UDEMY/ HOLCZER BALAZS
 
 BYTE SIZE CHUNKS : JAVA MULTITHREADING - UDEMY 
 
-ADVANCED ALGORITHMS IN JAVA @ HOLCZER BALAZS
+ADVANCED ALGORITHMS IN JAVA -  HOLCZER BALAZS/ UDEMY 
+
+JAVA NETWORK PROGRAMMING - TCP/IP SOCKET PROGRAMMING - UDEMY 
+
+PROFESSIONAL WEB SCRAPING WITH JAVA - UDEMY 
+
+JAVA SOCKET PROGRAMMING: BUILD A CHAT APPLICATION - UDEMY 
+
+COMPLEXITY THEORY BASICS - UDEMY 
 
 INTRO COLLECTIONS, GENERICS AND REFLECTIONS) IN JAVA @ HOLCZER BALAZS
 
 INTRODUCTION TO NUMERICAL METHODS IN JAVA @ HOLCZER BALAZS <HTTPS://WWW.UDEMY.COM/NUMERICAL-METHODS-IN-JAVA/?COUPONCODE=NUMMETHOD_10> 
 —————————————————————————————————————————————————————————————————————————————————————
+
+
+
+
+——————————————————————————————————————————————————————————————————————————————
+
+——————————————
+HADOOP COURSES 
+——————————————
+
+JAVA PARALLEL COMPUTATION ON HADOOP - UDEMY 
+——————————————————————————————————————————————————————————————————————————————
+
+
 
 
 
@@ -748,6 +814,35 @@ NETTY, VERT.X, QBIT, JCTOOLS AND CHRONICLE
 
 
 
+DISTRIBUTED SYSTEMS ARCHITECTURE
+————————————————————————————————
+
+SOFTWARE ARCHITECTURE   
+
+ION   
+
+IAP   
+
+IAP TOOLS FOR JAVA  
+
+GRID OPS FOR JAVA  
+
+SOA - SERVICE ORIENTED ARCHITECTURE   
+
+WEB SERVICES   
+
+SOAP   
+
+WSDL 2.0   
+
+RSYNC   
+
+PEER-TO-PEER (P2P) NETWORKS   
+
+
+
+
+
 
 —————
 BOOKS 
@@ -756,7 +851,7 @@ BOOKS
 ————————————————————————————————————————————————————————————————————————————————————————
 JAVA CONCURRENCY IN PRACTICE - BRIAN GOETZ
 
-SEVEN CONCURRENCY MODELS IN SEVEN WEEKS: WHEN THREADS UNRAVEL - PAUL BUTCHER 
+7 CONCURRENCY MODELS IN SEVEN WEEKS: WHEN THREADS UNRAVEL - PAUL BUTCHER 
 
 JAVA DISTRIBUTED COMPUTING - JIM FARLEY/ O'REILLY MEDIA
 

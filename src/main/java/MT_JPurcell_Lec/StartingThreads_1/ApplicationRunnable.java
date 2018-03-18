@@ -3,7 +3,6 @@ package StartingThreads_1;
 
 class RunnerRunnable implements Runnable {
 
-
     @Override
     public void run() {
 

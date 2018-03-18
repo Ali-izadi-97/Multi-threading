@@ -4,12 +4,19 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-// 6220D005-A00F-43C6-92D7-FFA640D8839F
+
+/*Java multi threads example to show you how to use Semaphore and Mutex 
+to limit the number of threads to access resources.
+
+Semaphores – Restrict the number of threads that can access a resource. 
+Example, limit max 10 connections to access a file simultaneously.
+
+Mutex – Only one thread to access a resource at once. Example, when a 
+client is accessing a file, no one else should have access the same file 
+at the same time.*/
 
 
-
-/*
-Before obtaining an item each thread must acquire a permit from the semaphore, 
+/*Before obtaining an item each thread must acquire a permit from the semaphore, 
 guaranteeing that an item is available for use. When the thread has finished 
 with the item it is returned back to the pool and a permit is returned to the 
 semaphore, allowing another thread to acquire that item. Note that no synchronization 
@@ -27,7 +34,6 @@ permits available. When used in this way, the binary semaphore has the property
 than the owner (as semaphores have no notion of ownership). This can be useful in some 
 specialized contexts, such as deadlock recovery.
 
-
 The constructor for this class optionally accepts a fairness parameter. When set false, 
 this class makes no guarantees about the order in which threads acquire permits. In 
 particular, barging is permitted, that is, a thread invoking acquire() can be allocated 
@@ -44,16 +50,11 @@ do not honor the fairness setting, but will take any permits that are available.
 Generally, semaphores used to control resource access should be initialized as fair, 
 to ensure that no thread is starved out from accessing a resource. When using semaphores 
 for other kinds of synchronization control, the throughput advantages of non-fair 
-ordering often outweigh fairness considerations.
-
-This class also provides convenience methods to acquire and release multiple permits at 
+ordering often outweigh fairness considerations. This class also provides convenience methods to acquire and release multiple permits at 
 a time. Beware of the increased risk of indefinite postponement when these methods are 
-used without fairness set true.
-
-Memory consistency effects: Actions in a thread prior to calling a "release" method such 
+used without fairness set true. Memory consistency effects: Actions in a thread prior to calling a "release" method such 
 as release() happen-before actions following a successful "acquire" method such as 
 acquire() in another thread.*/
-
 
 
 /**
@@ -87,6 +88,9 @@ acquire() in another thread.*/
  * Mutex --its ONE. Semaphore -- its DEFINED_COUNT, ( as many as semaphore
  * count)
  */
+
+
+
 public class App {
 
 

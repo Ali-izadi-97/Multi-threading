@@ -94,7 +94,6 @@ class BlockingQueue<T> {
         }
     }
 
-
     public T take() throws InterruptedException {
 
         lock.lock();
@@ -107,6 +106,7 @@ class BlockingQueue<T> {
             }
 
             T item = queue.remove();
+
             System.out.println("Removed to the queue " + item);
             notFull.signal(); //calls waiting thread on same object
             return item;
@@ -175,9 +175,10 @@ public class BlockingQueueApp {
 
 
 
-// ===================================================================================
+// -----------------------------------------------------------------------------------
 
 public class BlockingQueue<T> {
+
 
     private Queue<T> queue = new LinkedList<T>();
     private int capacity;
@@ -187,6 +188,7 @@ public class BlockingQueue<T> {
     }
 
     public synchronized void put(T element) throws InterruptedException {
+
         while(queue.size() == capacity) {
             wait();
         }
@@ -196,6 +198,7 @@ public class BlockingQueue<T> {
     }
 
     public synchronized T take() throws InterruptedException {
+
         while(queue.isEmpty()) {
             wait();
         }
@@ -205,8 +208,7 @@ public class BlockingQueue<T> {
         return item;
     }
 }
-
-// ===================================================================================
+// -----------------------------------------------------------------------------------
 
 
 
@@ -221,6 +223,7 @@ public class BlockingQueue<T> {
 // Not a queue example, but extremely simple :)
 
 class MyHouse {
+
     private boolean pizzaArrived = false;
 
     public void eatPizza(){
