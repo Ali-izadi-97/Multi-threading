@@ -6,6 +6,7 @@ import java.util.concurrent.ForkJoinPool;
 
 public class App {
 
+
 	public static int THREASHOLD = 0;
 	
 	public static void main(String[] args) {
@@ -16,6 +17,7 @@ public class App {
 		SequentialMaxFind normalMaxFind = new SequentialMaxFind();
 		
 		long start = System.currentTimeMillis();
+
 		System.out.println("Max: " + normalMaxFind.sequentialMaxFinding(nums, nums.length));
 		System.out.println("Time taken: " + (System.currentTimeMillis() - start) + "ms");
 

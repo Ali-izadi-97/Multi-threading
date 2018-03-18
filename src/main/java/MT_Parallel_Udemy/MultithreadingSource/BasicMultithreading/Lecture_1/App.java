@@ -1,6 +1,5 @@
 package com.balazsholczer.udemy;
 
-
 class Runner1 {
 	
 	public void startRunning() {

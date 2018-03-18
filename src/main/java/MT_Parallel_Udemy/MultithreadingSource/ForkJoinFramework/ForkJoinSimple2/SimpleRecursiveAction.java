@@ -28,8 +28,7 @@ public class SimpleRecursiveAction extends RecursiveTask<Integer> {
 			solution = solution + simpleRecursiveAction1.join();
 			solution = solution + simpleRecursiveAction2.join();
 			
-			return solution;
-			
+			return solution;			
 		} else {
 			System.out.println("No need for parallel execution, sequential is OK for this task..." );
 			return 2 * simulatedWork;

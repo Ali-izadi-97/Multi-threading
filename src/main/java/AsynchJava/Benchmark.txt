@@ -1,0 +1,3 @@
+Akka Scrapper - 2.30 Minutes
+Asynch Scrapper - 1.30 Minutes
+Future Scrapper - 3.30 Minutes

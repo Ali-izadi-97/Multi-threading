@@ -6,11 +6,15 @@ import org.slf4j.LoggerFactory;
 import java.util.concurrent.TransferQueue;
 import java.util.concurrent.atomic.AtomicInteger;
 
+
 public class Consumer implements Runnable {
+
+
     private static final Logger LOG = LoggerFactory.getLogger(Consumer.class);
 
     private final TransferQueue<String> transferQueue;
     private final String name;
+
     final int numberOfMessagesToConsume;
     final AtomicInteger numberOfConsumedMessages = new AtomicInteger();
 
@@ -22,6 +26,7 @@ public class Consumer implements Runnable {
 
     @Override
     public void run() {
+
         for (int i = 0; i < numberOfMessagesToConsume; i++) {
             try {
                 LOG.debug("Consumer: " + name + " is waiting to take element...");

@@ -7,12 +7,14 @@ import java.util.concurrent.TimeUnit;
 
 import com.google.common.util.concurrent.MoreExecutors;
 
+
 /**
  * This class demonstrates the usage of Guava's exiting executor services that keep the VM from hanging.
  * Without the exiting executor service, the task would hang indefinitely.
  * This behaviour cannot be demonstrated in JUnit tests, as JUnit kills the VM after the tests.
  */
 public class ExitingExecutorServiceExample {
+
 
     public static void main(String... args) {
 
@@ -23,7 +25,5 @@ public class ExitingExecutorServiceExample {
             while (true) {
             }
         });
-
     }
-
 }

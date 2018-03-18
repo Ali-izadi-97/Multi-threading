@@ -8,6 +8,7 @@ public class App {
 		
 		ForkJoinPool forkJoinPool = new ForkJoinPool(Runtime.getRuntime().availableProcessors());
 		SimpleRecursiveAction simpleRecursiveAction = new SimpleRecursiveAction(400);
+
 		forkJoinPool.invoke(simpleRecursiveAction);		
 	}
 }

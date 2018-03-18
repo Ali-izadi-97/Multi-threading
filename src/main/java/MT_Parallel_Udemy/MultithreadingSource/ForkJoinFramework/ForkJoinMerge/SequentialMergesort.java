@@ -38,8 +38,7 @@ public class SequentialMergesort {
 		while (i < leftSubarray.length && j < rightSubarray.length) {
 			if (leftSubarray[i] < rightSubarray[j]){
 				originalArray[k++] = leftSubarray[i++];
-			}
-			else{
+			}else{
 				originalArray[k++] = rightSubarray[j++];
 			}
 		}
