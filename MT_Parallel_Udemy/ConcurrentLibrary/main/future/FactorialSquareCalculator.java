@@ -15,6 +15,7 @@ public class FactorialSquareCalculator extends RecursiveTask<Integer> {
 
     @Override
     protected Integer compute() {
+        
         if (n <= 1) {
             return n;
         }
