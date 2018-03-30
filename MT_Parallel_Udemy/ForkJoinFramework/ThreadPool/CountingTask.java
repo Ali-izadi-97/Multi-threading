@@ -6,6 +6,7 @@ import java.util.concurrent.RecursiveTask;
 
 public class CountingTask extends RecursiveTask<Integer> {
 
+
     private final TreeNode node;
 
     CountingTask(TreeNode node) {

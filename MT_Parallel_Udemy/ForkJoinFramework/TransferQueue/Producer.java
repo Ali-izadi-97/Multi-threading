@@ -8,8 +8,6 @@ import java.util.concurrent.TransferQueue;
 import java.util.concurrent.atomic.AtomicInteger;
 
 
-
-
 public class Producer implements Runnable {
 
 
@@ -34,7 +32,6 @@ public class Producer implements Runnable {
         for (int i = 0; i < numberOfMessagesToProduce; i++) {
 
             try {
-
                 LOG.debug("Producer: " + name + " is waiting to transfer...");
                 boolean added = transferQueue.tryTransfer("A" + i, 4000, TimeUnit.MILLISECONDS);
 
