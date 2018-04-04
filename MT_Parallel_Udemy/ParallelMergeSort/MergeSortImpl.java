@@ -36,6 +36,7 @@ class myMergesort {
         return (first == null);
     }
 
+
     public void insert(int val) {
 
         Node newNode = new Node(val);

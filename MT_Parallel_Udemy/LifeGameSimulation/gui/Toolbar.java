@@ -12,7 +12,9 @@ import callbacks.ButtonListener;
 
 public class Toolbar extends JPanel implements ActionListener {
 
+
 	private static final long serialVersionUID = 1L;
+
 	private JButton startButton;
 	private JButton restartButton;
 	private ButtonListener buttonListener;

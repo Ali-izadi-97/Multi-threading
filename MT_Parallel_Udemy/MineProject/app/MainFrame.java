@@ -14,9 +14,12 @@ import com.minerapp.view.Toolbar;
 import com.minerapp.workers.MineLayer;
 import com.minerapp.workers.MineSweeper;
 
+
 public class MainFrame extends JFrame implements ButtonListener{
 
+
 	private static final long serialVersionUID = 1L;
+
 	private Toolbar toolbar;
 	private Board board;
 	private ExecutorService layersExecutor;
@@ -53,8 +56,7 @@ public class MainFrame extends JFrame implements ButtonListener{
 		this.layersExecutor = Executors.newFixedThreadPool(Constants.NUMBER_OF_LAYERS);
 		this.sweepersExecutor = Executors.newFixedThreadPool(Constants.NUMBER_OF_SWEEPERS);
 	
-		try{
-			
+		try{			
 			for(int i=0;i<Constants.NUMBER_OF_LAYERS;i++){
 				mineLayers[i] = new MineLayer(i, board);
 				layersExecutor.execute(mineLayers[i]);
@@ -97,7 +99,6 @@ public class MainFrame extends JFrame implements ButtonListener{
 		layersExecutor.shutdownNow();
 		sweepersExecutor.shutdownNow();
 		
-		this.board.clearBoard();
-		
+		this.board.clearBoard();		
 	}
 }

@@ -30,6 +30,11 @@ public class MineLayer implements Runnable{
 				return;
 			}
 			
+			/*
+				The nextInt(int n) is used to get a random number between 
+				0(inclusive) and the number passed in this argument(n), 
+				exclusive.
+			*/
 			int index = random.nextInt(Constants.BOARD_ROWS*Constants.BOARD_COLUMNS);
 			board.setMine(index);
 			

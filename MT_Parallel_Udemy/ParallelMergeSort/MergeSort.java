@@ -62,12 +62,6 @@ public class MergeSort {
 		merge(low, middle, high);
 	}
 
-	public void showResult() {
-		for (int i = 0; i < nums.length; ++i) {
-			System.out.print(nums[i] + " ");
-		}
-	}
-
 	private void merge(int low, int middle, int high) {
 
 		// Copy nums[i] -> temp[i]
@@ -89,7 +83,6 @@ public class MergeSort {
 				nums[k] = tempArray[j];
 				j++;
 			}
-
 			k++;
 		}
 
@@ -98,6 +91,18 @@ public class MergeSort {
 			nums[k] = tempArray[i];
 			k++;
 			i++;
+		}
+
+		// Copy the rest of the left side of the array into the target array
+		// while (j <= high) {
+		
+		// }
+	}
+
+
+	public void showResult() {
+		for (int i = 0; i < nums.length; ++i) {
+			System.out.print(nums[i] + " ");
 		}
 	}
 }

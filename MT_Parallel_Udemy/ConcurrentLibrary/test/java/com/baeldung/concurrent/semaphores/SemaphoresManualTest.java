@@ -33,12 +33,14 @@ public class SemaphoresManualTest {
         final int slots = 10;
         final ExecutorService executorService = Executors.newFixedThreadPool(slots);
         final LoginQueueUsingSemaphore loginQueue = new LoginQueueUsingSemaphore(slots);
+
         IntStream.range(0, slots)
           .forEach(user -> executorService.execute(loginQueue::tryLogin));
         executorService.shutdown();
 
         assertEquals(0, loginQueue.availableSlots());
         loginQueue.logout();
+
         assertTrue(loginQueue.availableSlots() > 0);
         assertTrue(loginQueue.tryLogin());
     }
@@ -77,9 +79,11 @@ public class SemaphoresManualTest {
 
     @Test
     public void whenMutexAndMultipleThreads_thenBlocked() throws InterruptedException {
+
         final int count = 5;
         final ExecutorService executorService = Executors.newFixedThreadPool(count);
         final CounterUsingMutex counter = new CounterUsingMutex();
+
         IntStream.range(0, count)
           .forEach(user -> executorService.execute(() -> {
               try {

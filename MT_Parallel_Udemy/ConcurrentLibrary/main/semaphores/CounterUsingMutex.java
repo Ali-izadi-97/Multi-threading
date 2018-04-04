@@ -2,7 +2,7 @@ package com.baeldung.concurrent.semaphores;
 
 import java.util.concurrent.Semaphore;
 
-class CounterUsingMutex {
+public class CounterUsingMutex {
 
     private final Semaphore mutex;
     private int count;
@@ -12,18 +12,24 @@ class CounterUsingMutex {
         count = 0;
     }
 
-    void increase() throws InterruptedException {
+    public void increase() throws InterruptedException {
         mutex.acquire();
         this.count = this.count + 1;
         Thread.sleep(1000);
         mutex.release();
     }
 
-    int getCount() {
+    public int getCount() {
         return this.count;
     }
 
-    boolean hasQueuedThreads() {
+
+    /*
+        "hasQueuedThreads" method queries whether any threads are waiting to 
+        acquire. Note that because cancellations may occur at any time, a true 
+        return does not guarantee that any other thread will ever acquire. 
+    */
+    public  boolean hasQueuedThreads() {
         return mutex.hasQueuedThreads();
     }
 }

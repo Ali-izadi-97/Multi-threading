@@ -5,7 +5,9 @@ import java.util.Random;
 import com.minerapp.constants.Constants;
 import com.minerapp.view.Board;
 
-public class MineSweeper implements Runnable{
+
+public class MineSweeper implements Runnable {
+
 
 	private int id;
 	private Board board;

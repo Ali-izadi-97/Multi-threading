@@ -10,16 +10,15 @@ import javax.swing.JPanel;
 
 public class Toolbar extends JPanel implements ActionListener {
 
-
 	private static final long serialVersionUID = 1L;
+
 	private JButton startButton;
 	private JButton stopButton;
 	private ButtonListener listener;
 	
 	public Toolbar(){
 		
-		setLayout(new FlowLayout(FlowLayout.CENTER));
-		
+		setLayout(new FlowLayout(FlowLayout.CENTER));		
 		initVariables();
 		
 		add(startButton);
@@ -27,8 +26,10 @@ public class Toolbar extends JPanel implements ActionListener {
 	}
 
 	private void initVariables() {
+
 		this.startButton = new JButton("Start");
 		this.stopButton = new JButton("Stop");
+
 		this.startButton.addActionListener(this);
 		this.stopButton.addActionListener(this);
 	}

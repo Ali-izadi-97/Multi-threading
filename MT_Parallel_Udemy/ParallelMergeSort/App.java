@@ -3,6 +3,10 @@ package com.mergesort.parallel;
 import java.util.Random;
 
 
+
+/*
+	These implementations are concurrent implementation
+*/
 public class App {
 
 	public static Random random = new Random();
