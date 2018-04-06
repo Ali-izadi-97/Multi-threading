@@ -4,13 +4,14 @@ import com.amazonaws.services.sqs.AmazonSQSClient;
 import com.amazonaws.services.sqs.model.*;
 
 public class SqsQueueService implements QueueService {
+
     //
     // Task 4: Optionally implement parts of me.
     //
     // This file is a placeholder for an AWS-backed implementation of QueueService.  It is included
     // primarily so you can quickly assess your choices for method signatures in QueueService in
     // terms of how well they map to the implementation intended for a production environment.
-    //
+
     private AmazonSQSClient sqsClient;
 
     public SqsQueueService(AmazonSQSClient sqsClient) {

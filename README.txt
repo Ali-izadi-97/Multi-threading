@@ -381,7 +381,9 @@ i. Do not synchronize on non final field on synchronized block in Java. because 
    different objects i.e. no synchronization at all. Best is to use String class, which is
    already immutable and declared final.
 
-----------------------------------------------------------------------------------------
+—————————————————————————————————————————————
+
+
 
 
 
@@ -620,6 +622,22 @@ JAVA 8 TUTORIAL - BENJAMIN WINTERBERG/ HANOVER, GERMANY
 
 
 
+————————————
+APACHE KAFKA
+————————————
+——————————————————————————————————————————————————————————————————————————————————
+APACHE KAFKA SERIES - LEARN APACHE KAFKA FOR BEGINNERS - STEPHANE MAAREK/ UDEMY 
+
+APACHE KAFKA SERIES - KAFKA CLUSTER SETUP & ADMINISTRATION - STEPHANE MAAREK/ UDEMY 
+
+APACHE KAFKA SERIES - KAFKA CONNECT HANDS-ON LEARNING - STEPHANE MAAREK/ UDEMY 
+
+APACHE KAFKA SERIES - KAFKA STREAMS FOR DATA PROCESSING - STEPHANE MAAREK/ UDEMY 
+
+APACHE KAFKA SERIES - KAFKA SECURITY (SSL SASL KERBEROS ACL) - UDEMY 
+
+APACHE KAFKA SERIES - CONFLUENT SCHEMA REGISTRY & REST PROXY - UDEMY 
+——————————————————————————————————————————————————————————————————————————————————
 
 —————————————————————————————————————————————————————————————————————————————————————
 MEMORY MANAGEMENT
@@ -840,6 +858,9 @@ RSYNC
 PEER-TO-PEER (P2P) NETWORKS   
 
 
+——————————————————————————————————————
+YOUTUBE JAVA CHANNEL - YEGOR BUGAYENKO
+——————————————————————————————————————
 
 
 

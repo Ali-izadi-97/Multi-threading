@@ -290,8 +290,10 @@ public class QueueFile implements Closeable {
         // Commit the addition. If wasEmpty, first == last.
         int firstPosition = wasEmpty ? newLast.position : first.position;
         writeHeader(fileLength, elementCount + 1, firstPosition, newLast.position);
+
         last = newLast;
         elementCount++;
+
         if (wasEmpty) first = last; // first element
     }
 
@@ -408,7 +410,8 @@ public class QueueFile implements Closeable {
      *
      * @deprecated use {@link #forEach(ElementVisitor)}
      */
-    @Deprecated public synchronized void forEach(final ElementReader reader) throws IOException {
+    @Deprecated 
+    public synchronized void forEach(final ElementReader reader) throws IOException {
         forEach(new ElementVisitor() {
             @Override public boolean read(InputStream in, int length) throws IOException {
                 reader.read(in, length);
@@ -425,6 +428,7 @@ public class QueueFile implements Closeable {
      * @return number of elements visited
      */
     public synchronized int forEach(ElementVisitor reader) throws IOException {
+
         int position = first.position;
         for (int i = 0; i < elementCount; i++) {
             Element current = readElement(position);
@@ -437,7 +441,9 @@ public class QueueFile implements Closeable {
         return elementCount;
     }
 
+
     private final class ElementInputStream extends InputStream {
+
         private int position;
         private int remaining;
 
@@ -447,23 +453,32 @@ public class QueueFile implements Closeable {
         }
 
         @Override public int read(byte[] buffer, int offset, int length) throws IOException {
+
             if ((offset | length) < 0 || length > buffer.length - offset) {
                 throw new ArrayIndexOutOfBoundsException();
             }
+
             if (remaining == 0) {
                 return -1;
             }
+
             if (length > remaining) length = remaining;
             ringRead(position, buffer, offset, length);
+
             position = wrapPosition(position + length);
             remaining -= length;
             return length;
         }
 
         @Override public int read() throws IOException {
-            if (remaining == 0) return -1;
+
+            if (remaining == 0) {
+                return -1;
+            }
+
             raf.seek(position);
             int b = raf.read();
+
             position = wrapPosition(position + 1);
             remaining--;
             return b;
@@ -490,9 +505,11 @@ public class QueueFile implements Closeable {
      * @throws NoSuchElementException if the queue is empty
      */
     public synchronized void remove(int n) throws IOException {
+
         if (isEmpty()) {
             throw new NoSuchElementException();
         }
+
         if (n < 0) {
             throw new IllegalArgumentException("Cannot remove negative (" + n + ") number of elements.");
         }
@@ -547,12 +564,16 @@ public class QueueFile implements Closeable {
     }
 
     /** Closes the underlying file. */
-    @Override public synchronized void close() throws IOException {
+    @Override 
+    public synchronized void close() throws IOException {
         raf.close();
     }
 
-    @Override public String toString() {
+    @Override 
+    public String toString() {
+    
         final StringBuilder builder = new StringBuilder();
+    
         builder.append(getClass().getSimpleName()).append('[');
         builder.append("fileLength=").append(fileLength);
         builder.append(", size=").append(elementCount);
@@ -616,7 +637,8 @@ public class QueueFile implements Closeable {
      *
      * @deprecated use {@link ElementVisitor} instead.
      */
-    @Deprecated public interface ElementReader {
+    @Deprecated 
+    public interface ElementReader {
 
     /*
      * TODO: Support remove() call from read().

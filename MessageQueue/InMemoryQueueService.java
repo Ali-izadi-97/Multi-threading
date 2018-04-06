@@ -1,11 +1,12 @@
 package com.example;
 
+import java.util.concurrent.ConcurrentMap;
 import com.amazonaws.services.sqs.model.Message;
 import com.amazonaws.services.sqs.model.QueueDoesNotExistException;
 
-import java.util.concurrent.ConcurrentMap;
 
 public class InMemoryQueueService implements QueueService {
+
 
     private ConcurrentMap<String, InMemoryQueue> queues;
 

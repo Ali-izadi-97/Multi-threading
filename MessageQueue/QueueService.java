@@ -6,7 +6,7 @@ public interface QueueService {
 
     //
     // Task 1: Define me.
-    //
+    // 
     // This interface should include the following methods.  You should choose appropriate
     // signatures for these methods that prioritise simplicity of implementation for the range of
     // intended implementations (in-memory, file, and SQS).  You may include additional methods if

@@ -6,7 +6,7 @@ public class FileQueueService implements QueueService {
 
     @Override
     public void sendMessage(String queueUrl, String messageBody) {
-
+        // some code             
     }
 
     @Override
@@ -16,6 +16,6 @@ public class FileQueueService implements QueueService {
 
     @Override
     public void deleteMessage(String queueUrl, String receiptHandle) {
-
+        // some code
     }
 }

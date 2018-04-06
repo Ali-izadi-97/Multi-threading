@@ -4,7 +4,9 @@ import java.util.concurrent.*;
  * Created by rajeevkumarsingh on 11/05/17.
  */
 public class FutureAndCallableExample {
+    
     public static void main(String[] args) throws InterruptedException, ExecutionException {
+    
         ExecutorService executorService = Executors.newSingleThreadExecutor();
 
         Callable<String> callable = () -> {
@@ -14,7 +16,8 @@ public class FutureAndCallableExample {
             return "Hello from Callable";
         };
 
-	System.out.println("Submitting Callable");	
+	   System.out.println("Submitting Callable");	
+       
         Future<String> future = executorService.submit(callable);
         // This line executes immediately
         System.out.println("Do something else while callable is getting executed");

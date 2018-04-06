@@ -13,8 +13,10 @@ import java.util.*;
  */
 public class FileQueue {
 
+
     /** Backing storage implementation. */
     private final QueueFile queueFile;
+
     /** Reusable byte output buffer. */
     private final DirectByteArrayOutputStream bytes = new DirectByteArrayOutputStream();
 
@@ -29,8 +31,10 @@ public class FileQueue {
     }
 
     public Message poll() throws IOException {
+
         String randomUuid = UUID.randomUUID().toString();
         String messageBody = this.peek();
+
         return new Message()
                 .withMessageId(randomUuid)
                 .withBody(messageBody)
@@ -62,6 +66,7 @@ public class FileQueue {
 
     /** Enables direct access to the internal array. Avoids unnecessary copying. */
     private static class DirectByteArrayOutputStream extends ByteArrayOutputStream {
+
         public DirectByteArrayOutputStream() {
             super();
         }

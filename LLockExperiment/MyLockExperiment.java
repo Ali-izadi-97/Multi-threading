@@ -10,17 +10,27 @@ import java.util.concurrent.locks.ReentrantLock;
 
 
 /*
-            Assignment Question:
-            --------------------
+
+  Assignment Question:
+  --------------------
 
 1. Create inner classes: Company and Loop inside the main class
+
 2. From Main create two objects of class Company
+
 3. Start thread loop for 10 on those objects
-4. While Company1 talks to Company2 – it locks an object. If at the same time – if Company2 wants to talk to Company1
-then it says – Conflicting – Lock already exist. (Both companies are already in talk)
+
+4. While Company1 talks to Company2 – it locks an object. If at 
+the same time – if Company2 wants to talk to Company1 then it says 
+– Conflicting – Lock already exist. (Both companies are already in 
+talk)
+
+
+
 
 Lock():
 =======
+
 java.util.concurrent.locks. A lock is a thread synchronization mechanism like synchronized blocks except locks can be
 more sophisticated than Java’s synchronized blocks. It is an interfaces and classes providing a framework for locking
 and waiting for conditions that is distinct from built-in synchronization and monitors.
@@ -43,6 +53,7 @@ TryLock() acquires the lock only if it is free at the time of invocation */
 
 public class MyLockExperiment {
 
+
     // Class CrunchifyLoop
     static class Loop implements Runnable {
 
@@ -55,9 +66,12 @@ public class MyLockExperiment {
         }
 
         public void run() {
+
             Random random = new Random();
+
             // Loop 10
             for (int counter = 0; counter <= 10; counter++) {
+
                 try {
                     Thread.sleep(random.nextInt(5));
                 } catch (InterruptedException e) {
@@ -67,6 +81,7 @@ public class MyLockExperiment {
             }
         }
     }
+
 
     // Class Company
     static class Company {
@@ -125,10 +140,12 @@ public class MyLockExperiment {
         }
     }
 
+
     public static void main(String[] args) {
 
         final Company molomics = new Company("Molomics");
         final Company google = new Company("Google");
+
         new Thread(new Loop(molomics, google)).start();
         new Thread(new Loop(google, molomics)).start();
     }

@@ -65,6 +65,7 @@ public class MainFrame extends JFrame implements ButtonListener{
 		menuBar.add(helpMenu);
 		
 		exitMenuItem.addActionListener(new ActionListener() {
+
 			public void actionPerformed(ActionEvent arg0) {
 				int action = JOptionPane.showConfirmDialog(MainFrame.this, "Do you want to exit?","Warning",JOptionPane.YES_NO_OPTION);
 				if( action == JOptionPane.OK_OPTION ){

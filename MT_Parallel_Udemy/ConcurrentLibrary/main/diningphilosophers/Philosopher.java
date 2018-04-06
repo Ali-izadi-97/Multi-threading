@@ -2,6 +2,7 @@ package com.baeldung.concurrent.diningphilosophers;
 
 public class Philosopher implements Runnable {
 
+
     private final Object leftFork;
     private final Object rightFork;
 

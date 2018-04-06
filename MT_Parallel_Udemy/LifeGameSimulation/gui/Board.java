@@ -27,8 +27,8 @@ public class Board extends JPanel {
 	}
 
 	public void refreshBoard(int id) {
-			cells[id].setAlive(true);
-			cells[id].setBackground(Color.decode(Constants.GREEN_COLOR));
+		cells[id].setAlive(true);
+		cells[id].setBackground(Color.decode(Constants.GREEN_COLOR));
 	}
 
 	public void newIteration(){

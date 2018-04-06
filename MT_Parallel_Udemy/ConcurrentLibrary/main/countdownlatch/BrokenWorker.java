@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.concurrent.CountDownLatch;
 
 public class BrokenWorker implements Runnable {
+
     private final List<String> outputScraper;
     private final CountDownLatch countDownLatch;
 

@@ -2,6 +2,7 @@ package com.baeldung.concurrent.diningphilosophers;
 
 public class DiningPhilosophers {
 
+
     public static void main(String[] args) throws Exception {
 
         Philosopher[] philosophers = new Philosopher[5];
