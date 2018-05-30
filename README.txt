@@ -127,8 +127,8 @@ JAVA THREAD GROUPS ARE IMPLEMENTED BY THE JAVA.LANG.THREADGROUP CLASS.
 
 DAEMON THREAD
 DAEMON THREAD IS A LOW PRIORITY THREAD (IN CONTEXT OF JVM) THAT RUNS IN BACKGROUND TO PERFORM TASKS SUCH AS GARBAGE COLLECTION (GC) ETC., THEY DO NOT PREVENT THE JVM FROM EXITING (EVEN IF THE DAEMON THREAD ITSELF IS RUNNING) WHEN ALL THE USER THREADS (NON-DAEMON THREADS) FINISH THEIR EXECUTION. JVM TERMINATES ITSELF WHEN ALL USER THREADS (NON-DAEMON THREADS) FINISH THEIR EXECUTION, JVM DOES NOT CARE WHETHER DAEMON THREAD IS RUNNING OR NOT, IF JVM FINDS RUNNING DAEMON THREAD (UPON COMPLETION OF USER THREADS), IT TERMINATES THE THREAD AND AFTER THAT SHUTDOWN ITSELF.
-1 # A NEWLY CREATED THREAD INHERITS THE DAEMON STATUS OF ITS PARENT. THAT’S THE REASON ALL THREADS CREATED INSIDE MAIN METHOD (CHILD THREADS OF MAIN THREAD) ARE NON-DAEMON BY DEFAULT, BECAUSE MAIN THREAD IS NON-DAEMON.
-2 # METHODS OF THREAD CLASS THAT ARE RELATED TO DAEMON THREADS AS FOLLOWING,
+# A NEWLY CREATED THREAD INHERITS THE DAEMON STATUS OF ITS PARENT. THAT’S THE REASON ALL THREADS CREATED INSIDE MAIN METHOD (CHILD THREADS OF MAIN THREAD) ARE NON-DAEMON BY DEFAULT, BECAUSE MAIN THREAD IS NON-DAEMON.
+# METHODS OF THREAD CLASS THAT ARE RELATED TO DAEMON THREADS AS FOLLOWING,
 PUBLIC VOID SETDAEMON(BOOLEAN STATUS): THIS METHOD IS USED FOR MAKING A USER THREAD TO DAEMON THREAD OR VICE VERSA. FOR EXAMPLE IF I HAVE A USER THREAD T THEN T.SETDAEMON(TRUE) WOULD MAKE IT DAEMON THREAD. ON THE OTHER HAND IF I HAVE A DAEMON THREAD TD THEN BY CALLING TD.SETDAEMON(FALSE) WOULD MAKE IT NORMAL THREAD(USER THREAD/NON-DAEMON THREAD).
 PUBLIC BOOLEAN ISDAEMON(): THIS METHOD IS USED FOR CHECKING THE STATUS OF A THREAD. IT RETURNS TRUE IF THE THREAD IS DAEMON ELSE IT RETURNS FALSE.
 SETDAEMON(): METHOD CAN ONLY BE CALLED BEFORE STARTING THE THREAD. THIS METHOD WOULD THROW ILLEGALTHREADSTATEEXCEPTION IF YOU CALL THIS METHOD AFTER THREAD.START() METHOD. (REFER THE EXAMPLE)
@@ -248,7 +248,7 @@ thread safe. This can be done as below :
 
 public class DemoClass{
 
-    public synchronized void demoMethod(){}
+   public synchronized void demoMethod(){}
 }
 
 
@@ -258,14 +258,14 @@ OR,
 
 public class DemoClass
 {
-    public void demoMethod()
-    {
-        synchronized (this)
-        {
+   public void demoMethod()
+   {
+       synchronized (this)
+       {
 
-            //other thread safe code
-        }
-    }
+           //other thread safe code
+       }
+   }
 }
 
 
@@ -277,15 +277,15 @@ OR,
 public class DemoClass
 {
 
-    private final Object lock = new Object();
+   private final Object lock = new Object();
 
-    public void demoMethod()
-    {
-        synchronized (lock)
-        {
-            //other thread safe code
-        }
-    }
+   public void demoMethod()
+   {
+       synchronized (lock)
+       {
+           //other thread safe code
+       }
+   }
 }
 
 
@@ -303,7 +303,7 @@ done to make static data thread safe.
 
 public class DemoClass
 {
-    public synchronized static void demoMethod(){}
+   public synchronized static void demoMethod(){}
 }
 
 
@@ -313,15 +313,15 @@ OR,
 public class DemoClass
 {
 
-    public void demoMethod()
-    {
+   public void demoMethod()
+   {
 
-        synchronized (DemoClass.class)
-        {
+       synchronized (DemoClass.class)
+       {
 
-            //other thread safe code
-        }
-    }
+           //other thread safe code
+       }
+   }
 }
 
 
@@ -332,54 +332,54 @@ OR,
 
 public class DemoClass
 {
-    private final static Object lock = new Object();
+   private final static Object lock = new Object();
 
-    public void demoMethod()
-    {
-        synchronized (lock)
-        {
-            //other thread safe code
-        }
-    }
+   public void demoMethod()
+   {
+       synchronized (lock)
+       {
+           //other thread safe code
+       }
+   }
 }
 
 
 NOTES
 -----
 
-a. Synchronization in java guarantees that no two threads can execute a synchronized
-   method which requires same lock simultaneously or concurrently.
+a. Synchronization in Java guarantees that no two threads can execute a synchronized
+  method which requires same lock simultaneously or concurrently.
 
-b. synchronized keyword can be used only with methods and code blocks. These methods
-   or blocks can be static or non-static both.
+b. Synchronized keyword can be used only with methods and code blocks. These methods
+  or blocks can be static or non-static both.
 
 c. When ever a thread enters into java synchronized method or block it acquires a lock
-   and whenever it leaves java synchronized method or block it releases the lock. Lock
-   is released even if thread leaves synchronized method after completion or due to any
-   Error or Exception.
+  and whenever it leaves java synchronized method or block it releases the lock. Lock
+  is released even if thread leaves synchronized method after completion or due to any
+  Error or Exception.
 
 d. Java synchronized keyword is re-entrant in nature it means if a java synchronized method
-   calls another synchronized method which requires same lock then current thread which is
-   holding lock can enter into that method without acquiring lock.
+  calls another synchronized method which requires same lock then current thread which is
+  holding lock can enter into that method without acquiring lock.
 
 e. Java Synchronization will throw NullPointerException if object used in java synchronized
-   block is null. For example, in above code sample if lock is initialized as null, the
-   synchronized (lock) will throw NullPointerException.
+  block is null. For example, in above code sample if lock is initialized as null, the
+  synchronized (lock) will throw NullPointerException.
 
 f. Synchronized methods in Java put a performance cost on your application. So use
-   synchronization when it is absolutely required. Also, consider using synchronized
-   code blocks for synchronizing only critical section of your code.
+  synchronization when it is absolutely required. Also, consider using synchronized
+  code blocks for synchronizing only critical section of your code.
 
 g. It’s possible that both static synchronized and non static synchronized method can
-   run simultaneously or concurrently because they lock on different object.
+  run simultaneously or concurrently because they lock on different object.
 
 h. According to the Java language specification you can not use java synchronized keyword
-   with constructor it’s illegal and result in compilation error.
+  with constructor it’s illegal and result in compilation error.
 
 i. Do not synchronize on non final field on synchronized block in Java. because reference of
-   non final field may change any time and then different thread might synchronizing on
-   different objects i.e. no synchronization at all. Best is to use String class, which is
-   already immutable and declared final.
+  non final field may change any time and then different thread might synchronizing on
+  different objects i.e. no synchronization at all. Best is to use String class, which is
+  already immutable and declared final.
 
 —————————————————————————————————————————————
 
@@ -639,6 +639,7 @@ APACHE KAFKA SERIES - KAFKA SECURITY (SSL SASL KERBEROS ACL) - UDEMY
 APACHE KAFKA SERIES - CONFLUENT SCHEMA REGISTRY & REST PROXY - UDEMY 
 ——————————————————————————————————————————————————————————————————————————————————
 
+
 —————————————————————————————————————————————————————————————————————————————————————
 MEMORY MANAGEMENT
 —————————————————
@@ -693,59 +694,35 @@ EFFICIENT PYTHON FOR HIGH PERFORMANCE PARALLEL COMPUTING - YOUTUBE- ENTHOUGHT/ M
 
 —————————————————————————————————————————————————————————————————————————————
 
-———————————————————————————————————
-PARALLEL COMPUTING SERIES - JUG .RU
-———————————————————————————————————
+—————————————————————————————————————————————
+PARALLEL COMPUTING SERIES - JUG.RU CONFERENCE 
+—————————————————————————————————————————————
 
-LOCKING, FROM TRADITIONAL TO MODERN I - NIR SHAVIT / YOUTUBE
-LOCKING, FROM TRADITIONAL TO MODERN II - NIR SHAVIT / YOUTUBE
-LOCKING, FROM TRADITIONAL TO MODERN III - NIR SHAVIT / YOUTUBE
-LOCKING, FROM TRADITIONAL TO MODERN IV - NIR SHAVIT / YOUTUBE
+LOCKING, FROM TRADITIONAL TO MODERN I, II, III, IV - NIR SHAVIT / YOUTUBE
 
-LOCK-FREE CONCURRENT DATA STRUCTURES I - DANNY HENDLER/ YOUTUBE
-LOCK-FREE CONCURRENT DATA STRUCTURES II - DANNY HENDLER/ YOUTUBE
-LOCK-FREE CONCURRENT DATA STRUCTURES III - DANNY HENDLER/ YOUTUBE
-LOCK-FREE CONCURRENT DATA STRUCTURES IV - DANNY HENDLER/ YOUTUBE
+LOCK-FREE CONCURRENT DATA STRUCTURES I, II, III, IV - DANNY HENDLER/ YOUTUBE
 
+WAIT-FREE COMPUTING "FOR DUMMIES" I, II, III, IV - RACHID GUERRAOUI/ YOUTUBE
 
-WAIT-FREE COMPUTING "FOR DUMMIES" I - RACHID GUERRAOUI/ YOUTUBE
-WAIT-FREE COMPUTING "FOR DUMMIES" II - RACHID GUERRAOUI/ YOUTUBE
-WAIT-FREE COMPUTING "FOR DUMMIES" III - RACHID GUERRAOUI/ YOUTUBE
-WAIT-FREE COMPUTING "FOR DUMMIES" IV - RACHID GUERRAOUI/ YOUTUBE
+RECOMMENDERS AND DISTRIBUTED MACHINE LEARNING I, II - ANNE-MARIE KERMARREC/ YOUTUBE
 
-RECOMMENDERS AND DISTRIBUTED MACHINE LEARNING I - ANNE-MARIE KERMARREC/ YOUTUBE
-RECOMMENDERS AND DISTRIBUTED MACHINE LEARNING II - ANNE-MARIE KERMARREC/ YOUTUBE
+TRANSACTIONAL MEMORY AND BEYOND I, II, III, IV - MAURICE HERLIHY/ YOUTUBE 
 
-TRANSACTIONAL MEMORY AND BEYOND I - MAURICE HERLIHY/ YOUTUBE 
-TRANSACTIONAL MEMORY AND BEYOND II - MAURICE HERLIHY/ YOUTUBE 
-TRANSACTIONAL MEMORY AND BEYOND III - MAURICE HERLIHY/ YOUTUBE 
-TRANSACTIONAL MEMORY AND BEYOND IV - MAURICE HERLIHY/ YOUTUBE 
+IMPLEMENTATION TECHNIQUES FOR LIBRARIES OF TRANSACTIONAL CONCURRENT DATA TYPES I, II - LIUBA SHRIRA/ YOUTUBE
 
-IMPLEMENTATION TECHNIQUES FOR LIBRARIES OF TRANSACTIONAL CONCURRENT DATA TYPES I - LIUBA SHRIRA/ YOUTUBE
-IMPLEMENTATION TECHNIQUES FOR LIBRARIES OF TRANSACTIONAL CONCURRENT DATA TYPES II - LIUBA SHRIRA/ YOUTUBE
+LOCK-FREE ALGORITHMS FOR KOTLIN COROUTINES I, II - ROMAN ELIZAROV/ YOUTUBE
 
 
-LOCK-FREE ALGORITHMS FOR KOTLIN COROUTINES I - ROMAN ELIZAROV/ YOUTUBE
-LOCK-FREE ALGORITHMS FOR KOTLIN COROUTINES II - ROMAN ELIZAROV/ YOUTUBE
+RELAXED CONCURRENT DATA STRUCTURES I, II, III, IV - DAN ALISTARH /YOUTUBE
 
-RELAXED CONCURRENT DATA STRUCTURES I - DAN ALISTARH /YOUTUBE
-RELAXED CONCURRENT DATA STRUCTURES II - DAN ALISTARH /YOUTUBE
-RELAXED CONCURRENT DATA STRUCTURES III - DAN ALISTARH /YOUTUBE
-RELAXED CONCURRENT DATA STRUCTURES IV - DAN ALISTARH /YOUTUBE
+UNIVERSAL DISTRIBUTED CONSTRUCTIONS: A GUIDED TOUR I, II  - MICHEL RAYNAL/ YOUTUBE
 
-UNIVERSAL DISTRIBUTED CONSTRUCTIONS: A GUIDED TOUR I  - MICHEL RAYNAL/ YOUTUBE
-UNIVERSAL DISTRIBUTED CONSTRUCTIONS: A GUIDED TOUR II  - MICHEL RAYNAL/ YOUTUBE
+MEMORY MANAGEMENT FOR CONCURRENT DATA STRUCTURES I, II, III, IV - EREZ PETRANK/ YOUTUBE
 ——————————————————————————————————————————————————————————————————————
 
 
-——————————————————————————————————————————————————————————————————————
-MEMORY MANAGEMENT FOR CONCURRENT DATA STRUCTURES - I - EREZ PETRANK/ YOUTUBE
-MEMORY MANAGEMENT FOR CONCURRENT DATA STRUCTURES - II - EREZ PETRANK/ YOUTUBE
-MEMORY MANAGEMENT FOR CONCURRENT DATA STRUCTURES - III - EREZ PETRANK/ YOUTUBE
-MEMORY MANAGEMENT FOR CONCURRENT DATA STRUCTURES - VI - EREZ PETRANK/ YOUTUBE 
-——————————————————————————————————————————————————————————————————————
 
-
+——————————————————————————————————————————————————————————————————————
 ADVANCED TOPICS IN PROGRAMMING LANGUAGES: A LOCK-FREE HASH TABLE - GOOGLE TECH ARCHIVE/ YOUTUBE
 DISTRIBUTED OPTIMISTIC ALGORITHM
 SYNCHRONIZATION, ATOMIC OPERATIONS, LOCKS-  CS 162-UC BERKELEY/ YOUTUBE
@@ -778,27 +755,115 @@ IMPLEMENTING LRU - GEORGIA TECH HPCA III - UDACITY/ YOUTUBE
 
 CPU CACHE
 ————————— 
-MIT 6.004 L15: THE MEMORY HIERARCHY - YOUTUBE
-MIT 6.004 L16: CACHE ISSUES - YOUTUBE
+THE MEMORY HIERARCHY - MIT 6.004 L15/ YOUTUBE
+CACHE ISSUES - MIT 6.004 L16/ YOUTUBE
 —————————————————————————————————————————————————————————————————————————————
 
 
 
 
 DIFFERENCE BETWEEN A PROCESS AND A THREAD
+
+
+
 —————————————————————————————————————————————————————————————————————
 JAVA PARALLELISM AND DISTRIBUTED COMPUTING SPECIALIZATION IN COURSERA
 —————————————————————————————————————————————————————————————————————
 
 PARALLEL PROGRAMMING IN JAVA - COURSERA/ RICE UNIVERSITY 
-
 CONCURRENT PROGRAMMING IN JAVA - COURSERA/ RICE UNIVERSITY 
-
 DISTRIBUTED PROGRAMMING IN JAVA - COURSERA/ RICE UNIVERSITY 
 —————————————————————————————————————————————————————————————————————
 
 
+—————————————————————————————————————————————————————————————————————
+EDX COURSERS 
+————————————
+
+RELIABLE DISTRIBUTED ALGORITHMS I & II - KTH/ EDX + YOUTUBE 
+
+DISTRIBUTED MACHINE LEARNING WITH APACHE SPARK - UC BERKELEY/ EDX 
+
+ARCHITECTING DISTRIBUTED CLOUD APPLICATIONS - MICROSOFT/ EDX 
+—————————————————————————————————————————————————————————————————————
+
+
+
+—————————————————————————————————————————————————————————————————————
+
+PARALLEL COMPUTER ARCHITECTURE - ONUR MUTLU, CMU/ YOUTUBE 
+—————————————————————————————————————————————————————————
+
+
+L-1  INTRODUCTION
+
+L-2  PARALLELISM BASICS 
+
+L-3  PROGRAMMING MODELS
+
+L-4  MULTI-CORE PROCESSORS
+
+L-5  MULTI-CORE PROCESSORS II 
+
+L-6  ASYMMETRY
+
+L-7  EMERGING MEMORY
+
+L-8  MORE ASYMMETRY
+
+L-9  MULTITHREADING
+
+L-10  MULTITHREADING II
+
+L-11 CACHES IN MULTICORES
+
+L-12 CACHING IN MULTI-CORE
+
+L-13 MULTI-THREADING II
+
+L-14 
+
+L-15 SPECULATION 1
+
+L-16
+
+L-17 INTERCONNECTION NETWORKS I
+
+L-18 INTERCONNECTION NETWORKS II
+
+L-19
+
+L-20 SPECULATION+INTERCONNECT III
+
+L-21 INTERCONNECTS IV
+
+L-22 DATAF-LOW I
+
+L-23 DATAFLOW II
+
+L-24-MAIN MEMORY I
+
+L-25 MAIN MEMORY II
+
+L-26 MEMORY INTERFERENCE
+
+L-27 MAIN MEMORY III
+—————————————————————————————————————————————————————————————————————
+
+
+
+
+—————————————————————————————————————————————————————————————————————
 MULTI-CORE PROGRAMMING PRIMER - MIT OPEN COURSEWARE
+
+DISTRIBUTED ALGORITHMS - MIT OCW
+
+PROBABILISTIC SYSTEMS ANALYSIS AND APPLIED PROBABILITY - MIT OCW
+—————————————————————————————————————————————————————————————————————
+
+
+
+
 
 CORE JAVA CONCURRENCY <HTTPS://DZONE.COM/REFCARDZ/CORE-JAVA-CONCURRENCY>
 
@@ -878,12 +943,140 @@ BUILD A MODERN COMPUTER FROM FIRST PRINCIPLES: FROM NAND TO TETRIS (PROJECT-CENT
 
 
 
+——————————————————————————————————————————————————————————————————————————————————————
+
+JAVA THEORY AND PRACTICES - IBM SERIES 
+——————————————————————————————————————
+
+ARE ALL STATEFUL WEB APPLICATIONS BROKEN?
+
+GOING WILD WITH GENERICS I & II
+
+STICK A FORK IN IT - I & II
+
+MANAGING VOLATILITY
+
+THE CLOSURES DEBATE
+
+USING JAVA 5 LANGUAGE FEATURES IN EARLIER JDKS
+
+INSTRUMENTING APPLICATIONS WITH JMX
+
+TESTING WITH LEVERAGE I, II & III
+
+DEALING WITH INTERRUPTEDEXCEPTION
+
+INTRODUCTION TO NONBLOCKING ALGORITHMS
+
+GOOD HOUSEKEEPING PRACTICES
+
+THE PSEUDO-TYPEDEF ANTIPATTERN
+
+PLUGGING MEMORY LEAKS WITH SOFT REFERENCES
+
+PLUGGING MEMORY LEAKS WITH WEAK REFERENCES
+
+SYNCHRONIZATION OPTIMIZATIONS IN MUSTANG
+
+URBAN PERFORMANCE LEGENDS, REVISITED
+
+DECORATING WITH DYNAMIC PROXIES
+
+BE A GOOD (EVENT) LISTENER
+
+MAKE DATABASE QUERIES WITHOUT THE DATABASE
+
+ENABLE INITIALIZATION ATOMICITY
+
+SCREEN-SCRAPING WITH XQUERY
+
+ANATOMY OF A FLAWED MICROBENCHMARK
+
+GENERICS GOTCHAS
+
+DYNAMIC COMPILATION AND PERFORMANCE MEASUREMENT
+
+GOING ATOMIC
+
+MORE FLEXIBLE, SCALABLE LOCKING IN JDK 5.0
+
+STATE REPLICATION IN THE WEB TIER
+
+KILL BUGS DEAD
+
+THE EXCEPTIONS DEBATE
+
+FIXING THE JAVA MEMORY MODEL, PART 2
+
+FIXING THE JAVA MEMORY MODEL, PART 1
+
+GARBAGE COLLECTION AND PERFORMANCE
+
+GARBAGE COLLECTION IN THE HOTSPOT JVM
+
+A BRIEF HISTORY OF GARBAGE COLLECTION
+
+CHARACTERIZING THREAD SAFETY
+
+BUILDING A BETTER HASHMAP
+
+CONCURRENT COLLECTIONS CLASSES
+
+WHOSE OBJECT IS IT, ANYWAY?
+
+HASHING IT OUT
+
+URBAN PERFORMANCE LEGENDS
+
+PERFORMANCE MANAGEMENT -- DO YOU HAVE A PLAN?
+
+TO MUTATE OR NOT TO MUTATE?
+
+WHERE'S YOUR POINT?
+
+CONCURRENCY MADE SIMPLE (SORT OF)
+
+IS THAT YOUR FINAL ANSWER?
+
+HEY, WHERE'D MY THREAD GO?
+
+I HAVE TO DOCUMENT THAT?
+
+THREAD POOLS AND WORK QUEUES
+
+SAFE CONSTRUCTION TECHNIQUES
+
+UNDERSTANDING JTS -- BALANCING SAFETY AND PERFORMANCE
+
+UNDERSTANDING JTS -- THE MAGIC BEHIND THE SCENES
+
+UNDERSTANDING JTS -- AN INTRODUCTION TO TRANSACTIONS
+
+SHOULD YOU USE JMS IN YOUR NEXT ENTERPRISE APPLICATION?
+——————————————————————————————————————————————————————————————————————————————————————
+
 
 
 
 BLOG POSTS, WEB PAGES 
 —————————————————————
 
+
+LINEARIZABILITY, SERIALIZABILITY, TRANSACTION ISOLATION AND CONSISTENCY MODELS - DDDPAUL.GITHUB.IO
+
+LINEARIZABILITY VERSUS SERIALIZABILITY - PETER BAILIS
+
+DISTRIBUTED CONSISTENCY AND SESSION ANOMALIES - BLOG.ACOLYER.ORG
+
+A CRITIQUE OF ANSI SQL ISOLATION LEVELS - BLOG.ACOLYER.ORG
+
+STRONG CONSISTENCY MODELS - APHYR.COM
+
+A BEGINNER’S GUIDE TO DATABASE LOCKING AND THE LOST UPDATE PHENOMENA - VLAD MIHALCEA
+
+GENERALIZED ISOLATION LEVEL DEFINITIONS - BLOG.ACOLYER.ORG
+
+TRANSACTION ISOLATION - POSTGRESQL.ORG
 
 
 TOP 10 ALGORITHMS AND DATA STRUCTURES FOR COMPETITIVE PROGRAMMING [GEEKS FOR GEEKS ] <HTTP://WWW.GEEKSFORGEEKS.ORG/TOP-ALGORITHMS-AND-DATA-STRUCTURES-FOR-COMPETITIVE-PROGRAMMING/> 
@@ -973,23 +1166,38 @@ CONCURRENT PROGRAMMING IN JAVA: DESIGN PRINCIPLES AND PATTERNS - DOUG LEA
 
 JAVA CONCURRENCY IN PRACTICE - BRIAN GOETZ
 
-7 CONCURRENCY MODELS IN 7 WEEKS: WHEN THREADS UNRAVEL - PAUL BUTCHER 
+CONCURRENCY MODELS IN 7 WEEKS: WHEN THREADS UNRAVEL - PAUL BUTCHER 
 
 JAVA 8 IN ACTION: LAMBDAS, STREAMS, AND FUNCTIONAL-STYLE PROGRAMMING - ALAN MYCROFT, MARIO FUSCO
 
+DISTRIBUTED ALGORITHMS BY PROF. NANCY LYNCH
+
 JAVA PERFORMANCE: THE DEFINITIVE GUIDE - SCOTT OAKS
+
+JAVA PERFORMANCE TUNING - JACK SHIRAZI 
+
+PROGRAMMING FOR THE JAVA™ VIRTUAL MACHINE - JOSHUA ENGEL
+
+DESIGNING DISTRIBUTED SYSTEMS: PATTERNS AND PARADIGMS FOR SCALABLE, RELIABLE SERVICES - BRENDAN BURNS/ OREILLY
+
+DESIGNING DATA-INTENSIVE APPLICATIONS: THE BIG IDEAS BEHIND RELIABLE, SCALABLE, AND MAINTAINABLE SYSTEMS - MARTIN KLEPPMANN
+
+KUBERNETES: UP AND RUNNING: DIVE INTO THE FUTURE OF INFRASTRUCTURE - KELSEY HIGHTOWER, BRENDAN BURNS, JOE BEDA
 
 JAVA DISTRIBUTED COMPUTING - JIM FARLEY/ O'REILLY MEDIA
 
 JAVA NETWORK PROGRAMMING: DEVELOPING NETWORKED APPLICATIONS - ELLIOTTE HAROLD
 ————————————————————————————————————————————————————————————————————————————————————————
 
+—————————————————————————————————————
+Turn on the less secure apps in Gmail
+—————————————————————————————————————
 
 
 
 
 
- 
+
 
 
 
