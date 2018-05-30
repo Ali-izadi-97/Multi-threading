@@ -8,6 +8,8 @@ import static java.util.stream.Collectors.toList;
 
 import static lambdasinaction.chap4.Dish.menu;
 
+
+
 public class StreamBasic {
 
     public static void main(String...args){

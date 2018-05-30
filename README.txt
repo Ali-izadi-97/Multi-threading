@@ -694,9 +694,14 @@ EFFICIENT PYTHON FOR HIGH PERFORMANCE PARALLEL COMPUTING - YOUTUBE- ENTHOUGHT/ M
 
 —————————————————————————————————————————————————————————————————————————————
 
-—————————————————————————————————————————————
-PARALLEL COMPUTING SERIES - JUG.RU CONFERENCE 
-—————————————————————————————————————————————
+
+
+
+—————————————————————————————————————————————————
+RUSSIAN CONFERENCE ON PARALLEL COMPUTING (JUG.RU)
+—————————————————————————————————————————————————
+
+
 
 LOCKING, FROM TRADITIONAL TO MODERN I, II, III, IV - NIR SHAVIT / YOUTUBE
 
@@ -712,13 +717,15 @@ IMPLEMENTATION TECHNIQUES FOR LIBRARIES OF TRANSACTIONAL CONCURRENT DATA TYPES I
 
 LOCK-FREE ALGORITHMS FOR KOTLIN COROUTINES I, II - ROMAN ELIZAROV/ YOUTUBE
 
-
 RELAXED CONCURRENT DATA STRUCTURES I, II, III, IV - DAN ALISTARH /YOUTUBE
 
 UNIVERSAL DISTRIBUTED CONSTRUCTIONS: A GUIDED TOUR I, II  - MICHEL RAYNAL/ YOUTUBE
 
 MEMORY MANAGEMENT FOR CONCURRENT DATA STRUCTURES I, II, III, IV - EREZ PETRANK/ YOUTUBE
 ——————————————————————————————————————————————————————————————————————
+
+
+
 
 
 
@@ -1188,11 +1195,6 @@ JAVA DISTRIBUTED COMPUTING - JIM FARLEY/ O'REILLY MEDIA
 
 JAVA NETWORK PROGRAMMING: DEVELOPING NETWORKED APPLICATIONS - ELLIOTTE HAROLD
 ————————————————————————————————————————————————————————————————————————————————————————
-
-—————————————————————————————————————
-Turn on the less secure apps in Gmail
-—————————————————————————————————————
-
 
 
 
