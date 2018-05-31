@@ -5,29 +5,6 @@ import java.util.function.Predicate;
 
 public class LazyLists {
 
-    public static void main(String[] args) {
-        MyList<Integer> l = new MyLinkedList<>(5, new MyLinkedList<>(10,
-                new Empty<Integer>()));
-
-        System.out.println(l.head());
-
-        LazyList<Integer> numbers = from(2);
-        int two = numbers.head();
-        int three = numbers.tail().head();
-        int four = numbers.tail().tail().head();
-        System.out.println(two + " " + three + " " + four);
-
-        numbers = from(2);
-        int prime_two = primes(numbers).head();
-        int prime_three = primes(numbers).tail().head();
-        int prime_five = primes(numbers).tail().tail().head();
-        System.out.println(prime_two + " " + prime_three + " " + prime_five);
-
-        // this will run until a stackoverflow occur because Java does not
-        // support tail call elimination
-        // printAll(primes(from(2)));
-    }
-
     interface MyList<T> {
         T head();
 
@@ -124,6 +101,32 @@ public class LazyLists {
         }
         System.out.println(numbers.head());
         printAll(numbers.tail());
+    }
+
+    /**
+    * the main method for computation     
+    */
+    public static void main(String[] args) {
+        MyList<Integer> l = new MyLinkedList<>(5, new MyLinkedList<>(10,
+                new Empty<Integer>()));
+
+        System.out.println(l.head());
+
+        LazyList<Integer> numbers = from(2);
+        int two = numbers.head();
+        int three = numbers.tail().head();
+        int four = numbers.tail().tail().head();
+        System.out.println(two + " " + three + " " + four);
+
+        numbers = from(2);
+        int prime_two = primes(numbers).head();
+        int prime_three = primes(numbers).tail().head();
+        int prime_five = primes(numbers).tail().tail().head();
+        System.out.println(prime_two + " " + prime_three + " " + prime_five);
+
+        // this will run until a stackoverflow occur because Java does not
+        // support tail call elimination
+        // printAll(primes(from(2)));
     }
 
 }
