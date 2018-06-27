@@ -1,7 +1,8 @@
 
-—————————————————————————————————————————————————————————
-**ALL THE CODE IS COLLECTED FOR THE EDUCATIONAL PURPOSE**
-—————————————————————————————————————————————————————————
+———————————————————————————————————————————————————————————————————————
+CODE IS COLLECTED FOR THE EDUCATIONAL PURPOSE. OCCASIONALLY, I REFACTOR 
+OR WRITE SOME PROTION   
+———————————————————————————————————————————————————————————————————————
 
 
 MULTI-THREADING IN JAVA
@@ -694,7 +695,6 @@ JAVA PARALLEL COMPUTATION ON HADOOP - UDEMY
 ——————————————————————————————————————————————————————————————————————————————
 
 
-
 EFFICIENT PYTHON FOR HIGH PERFORMANCE PARALLEL COMPUTING - YOUTUBE- ENTHOUGHT/ MIKE MCKERNS
 
 
@@ -702,6 +702,17 @@ EFFICIENT PYTHON FOR HIGH PERFORMANCE PARALLEL COMPUTING - YOUTUBE- ENTHOUGHT/ M
 
 
 
+AKKA
+——————
+——————————————————————————————————————————————————
+INTRODUCTION TO AKKA ACTORS WITH JAVA 8 - YOUTUBE 
+——————————————————————————————————————————————————
+
+FUNCTIONAL PROGRAMMING
+——————————————————————
+————————————————————————————————————————————————————————————————
+FUNCTIONAL PROGRAMMING WITH JAVA 8 - YOUTUBE/ VENKAT SUBRAMANIAM
+————————————————————————————————————————————————————————————————
 
 —————————————————————————————————————————————————
 RUSSIAN CONFERENCE ON PARALLEL COMPUTING (JUG.RU)
@@ -1196,6 +1207,9 @@ DESIGNING DATA-INTENSIVE APPLICATIONS: THE BIG IDEAS BEHIND RELIABLE, SCALABLE, 
 KUBERNETES: UP AND RUNNING: DIVE INTO THE FUTURE OF INFRASTRUCTURE - KELSEY HIGHTOWER, BRENDAN BURNS, JOE BEDA
 
 JAVA DISTRIBUTED COMPUTING - JIM FARLEY/ O'REILLY MEDIA
+
+BUILDING REACTIVE MICROSERVICES IN JAVA BY CLEMENT ESCOER (OREILLY)
+ASYNCHRONOUS AND EVENT-BASED APPLICATION DESIGN
 
 JAVA NETWORK PROGRAMMING: DEVELOPING NETWORKED APPLICATIONS - ELLIOTTE HAROLD
 ————————————————————————————————————————————————————————————————————————————————————————
