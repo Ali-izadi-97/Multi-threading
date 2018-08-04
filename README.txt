@@ -815,7 +815,7 @@ ARCHITECTING DISTRIBUTED CLOUD APPLICATIONS - MICROSOFT/ EDX
 
 —————————————————————————————————————————————————————————————————————
 
-PARALLEL COMPUTER ARCHITECTURE - ONUR MUTLU, CMU/ YOUTUBE 
+PARALLEL COMPUTER ARCHITECTURE - PROF. ONUR MUTLU, CMU/ YOUTUBE 
 —————————————————————————————————————————————————————————
 
 
