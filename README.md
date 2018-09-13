@@ -635,8 +635,6 @@
 	——————————————————————————————————————————————————————————————————————————————————
 	APACHE KAFKA SERIES - LEARN APACHE KAFKA FOR BEGINNERS - STEPHANE MAAREK/ UDEMY 
 	
-	APACHE KAFKA SERIES - KAFKA CLUSTER SETUP & ADMINISTRATION - STEPHANE MAAREK/ UDEMY 
-	
 	APACHE KAFKA SERIES - KAFKA CONNECT HANDS-ON LEARNING - STEPHANE MAAREK/ UDEMY 
 	
 	APACHE KAFKA SERIES - KAFKA STREAMS FOR DATA PROCESSING - STEPHANE MAAREK/ UDEMY 
@@ -644,6 +642,8 @@
 	APACHE KAFKA SERIES - KAFKA SECURITY (SSL SASL KERBEROS ACL) - UDEMY 
 	
 	APACHE KAFKA SERIES - CONFLUENT SCHEMA REGISTRY & REST PROXY - UDEMY 
+	
+	APACHE KAFKA SERIES - KAFKA CLUSTER SETUP & ADMINISTRATION - STEPHANE MAAREK/ UDEMY 
 	
 	APACHE KAFKA SERIES - KAFKA MONITORING AND OPERATIONS - UDEMY 
 	——————————————————————————————————————————————————————————————————————————————————
@@ -705,6 +705,18 @@
 	—————————————————————————————————————————————————————————————————————————————
 	
 	
+	
+	—————————————————————————————————————————————————————————————————————————————
+	
+	TIM BERGLUND/ CONFLUENT
+	———————————————————————
+	
+	FOUR DISTRIBUTED SYSTEMS ARCHITECTURAL PATTERNS - TIM BERGLUND/ CONFLUENT
+
+	LESSONS LEARNED FORM KAFKA IN PRODUCTION - TIM BERGLUND/ CONFLUENT
+	—————————————————————————————————————————————————————————————————————————————
+
+
 	
 	AKKA
 	——————
