@@ -815,6 +815,10 @@
 	DISTRIBUTED PROGRAMMING IN JAVA - COURSERA/ RICE UNIVERSITY 
 	—————————————————————————————————————————————————————————————————————
 	
+
+
+
+	DECENTRALIZED APPLICATIONS - SIRAJ RAVAL/ THE SCHOOL OF AI 
 	
 	—————————————————————————————————————————————————————————————————————
 	EDX COURSERS 
