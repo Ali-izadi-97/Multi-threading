@@ -2,7 +2,7 @@
 	Note
 	————
 
-        The code is not mine and collected for the educational purpose from various blogs/ web-pages and books. Many instances, I refactored the code and occasionally, re-write some portion myself to adjust.       
+        The code is not mine and collected for the educational purpose from various blogs/ web-pages and books. Many instances, I refactored the code and occasionally, re-write some portion to adjust well.       
 	———————————————————————————————————————————————————————————————————————
 	
 	
