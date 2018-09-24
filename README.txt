@@ -1,7 +1,8 @@
 
-	———————————————————————————————————————————————————————————————————————
-	CODE IS COLLECTED FOR THE EDUCATIONAL PURPOSE. OCCASIONALLY, I REFACTOR 
-	OR WRITE SOME PROTION   
+	Note
+	————
+
+        The code is not mine and collected for the educational purpose from various blogs/ web-pages and books. Many instances, I refactored the code and occasionally, re-write some portion myself to adjust.       
 	———————————————————————————————————————————————————————————————————————
 	
 	
