@@ -3,7 +3,7 @@
 	————
 
         The code is not mine and collected for the educational purpose from various blogs/ web-pages and books. Many instances, I refactored the code and occasionally, re-write some portion to adjust well.       
-	———————————————————————————————————————————————————————————————————————
+
 	
 	
 	MULTI-THREADING IN JAVA
@@ -687,11 +687,9 @@
 	EFFICIENT PYTHON FOR HIGH PERFORMANCE PARALLEL COMPUTING - YOUTUBE- ENTHOUGHT/ MIKE MCKERNS
 	
 	
-	—————————————————————————————————————————————————————————————————————————————
-	
-	
-	
-	—————————————————————————————————————————————————————————————————————————————
+
+
+
 	
 	TIM BERGLUND/ CONFLUENT
 	———————————————————————
@@ -699,28 +697,42 @@
 	FOUR DISTRIBUTED SYSTEMS ARCHITECTURAL PATTERNS - TIM BERGLUND/ CONFLUENT
 
 	LESSONS LEARNED FORM KAFKA IN PRODUCTION - TIM BERGLUND/ CONFLUENT
-	—————————————————————————————————————————————————————————————————————————————
+	
 
 
 	
 	AKKA
 	——————
-	——————————————————————————————————————————————————
+	
 	INTRODUCTION TO AKKA ACTORS WITH JAVA 8 - YOUTUBE 
-	——————————————————————————————————————————————————
+
+	Introduction to the Actor Model for Concurrent Computation - Youtube 
+	
+
+
+
+
+
+
 	
 	FUNCTIONAL PROGRAMMING
 	——————————————————————
-	————————————————————————————————————————————————————————————————
-	FUNCTIONAL PROGRAMMING WITH JAVA 8 - YOUTUBE/ VENKAT SUBRAMANIAM
-	————————————————————————————————————————————————————————————————
 	
-	—————————————————————————————————————————————————
+	FUNCTIONAL PROGRAMMING WITH JAVA 8 - YOUTUBE/ VENKAT SUBRAMANIAM
+	
+	
+	
+
+
+
+
+
 	RUSSIAN CONFERENCE ON PARALLEL COMPUTING (JUG.RU)
 	—————————————————————————————————————————————————
 	
 	
 	
+
 	LOCKING, FROM TRADITIONAL TO MODERN I, II, III, IV - NIR SHAVIT / YOUTUBE
 	
 	LOCK-FREE CONCURRENT DATA STRUCTURES I, II, III, IV - DANNY HENDLER/ YOUTUBE
@@ -740,14 +752,14 @@
 	UNIVERSAL DISTRIBUTED CONSTRUCTIONS: A GUIDED TOUR I, II  - MICHEL RAYNAL/ YOUTUBE
 	
 	MEMORY MANAGEMENT FOR CONCURRENT DATA STRUCTURES I, II, III, IV - EREZ PETRANK/ YOUTUBE
-	——————————————————————————————————————————————————————————————————————
 	
 	
 	
 	
 	
 	
-	——————————————————————————————————————————————————————————————————————
+	
+
 	ADVANCED TOPICS IN PROGRAMMING LANGUAGES: A LOCK-FREE HASH TABLE - GOOGLE TECH ARCHIVE/ YOUTUBE
 	DISTRIBUTED OPTIMISTIC ALGORITHM
 	SYNCHRONIZATION, ATOMIC OPERATIONS, LOCKS-  CS 162-UC BERKELEY/ YOUTUBE
@@ -782,7 +794,7 @@
 	————————— 
 	THE MEMORY HIERARCHY - MIT 6.004 L15/ YOUTUBE
 	CACHE ISSUES - MIT 6.004 L16/ YOUTUBE
-	—————————————————————————————————————————————————————————————————————————————
+
 	
 	
 	
@@ -791,7 +803,7 @@
 	
 	
 	
-	—————————————————————————————————————————————————————————————————————
+
 	JAVA PARALLELISM AND DISTRIBUTED COMPUTING SPECIALIZATION IN COURSERA
 	—————————————————————————————————————————————————————————————————————
 	
@@ -805,7 +817,7 @@
 
 	DECENTRALIZED APPLICATIONS - SIRAJ RAVAL/ THE SCHOOL OF AI 
 	
-	—————————————————————————————————————————————————————————————————————
+
 	EDX COURSERS 
 	————————————
 	
@@ -814,11 +826,11 @@
 	DISTRIBUTED MACHINE LEARNING WITH APACHE SPARK - UC BERKELEY/ EDX 
 	
 	ARCHITECTING DISTRIBUTED CLOUD APPLICATIONS - MICROSOFT/ EDX 
-	—————————————————————————————————————————————————————————————————————
+
 	
 	
 	
-	—————————————————————————————————————————————————————————————————————
+
 	
 	PARALLEL COMPUTER ARCHITECTURE - PROF. ONUR MUTLU, CMU/ YOUTUBE 
 	—————————————————————————————————————————————————————————
