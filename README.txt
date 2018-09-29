@@ -1128,6 +1128,10 @@
 	APACHE MAHOUT: BEYOND MAPREDUCE - DMITRIY LYUBIMOV, ANDREW PALUMBO 
 	
 	MAPREDUCE DESIGN PATTERNS: BUILDING EFFECTIVE ALGORITHMS AND ANALYTICS FOR HADOOP AND OTHER SYSTEMS - DONALD MINER, ADAM SHOOK
+
+        Building Microservices: Designing Fine-Grained Systems - Sam Newman
+
+        Reactive Messaging Patterns with the Actor Model: Applications and Integration in    Scala and Akka - Vaughn Vernon
 	————————————————————————————————————————————————————————————————————————————————————————
 	
 	
