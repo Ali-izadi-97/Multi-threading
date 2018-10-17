@@ -634,6 +634,20 @@
 	——————————————————————————————————————————————————————————————————————————————————
 	
 	
+
+
+	—————————————————————————————————————————————————————————————————————————
+        PLURALSIGHT
+        ———————————
+
+	REACTIVE PROGRAMMING IN JAVA 8 WITH RXJAVA - RUSSELL ELLEDGE/ PLURALSIGHT
+
+	A Quick Introduction to Reactive Java - DZONE
+
+	What Are Reactive Streams in Java? - DZONE
+	—————————————————————————————————————————————————————————————————————————
+
+
 	—————————————————————————————————————————————————————————————————————————————————————
 	MEMORY MANAGEMENT
 	—————————————————
@@ -680,7 +694,11 @@
 	
 	JAVA PARALLEL COMPUTATION ON HADOOP - UDEMY 
 	
-	BUILD BIG DATA PIPELINES W/ HADOOP, FLUME, PIG, MONGODB - UDEMY
+	BUILD BIG DATA PIPELINES WITH HADOOP, FLUME, PIG, MONGODB - UDEMY
+
+	Learn Big Data: The Hadoop Ecosystem Masterclass - Edward Viaene/ UDEMY
+
+	THE ULTIMATE HANDS-ON HADOOP - TAME YOUR BIG DATA
 	——————————————————————————————————————————————————————————————————————————————
 	
 	
@@ -891,8 +909,20 @@
 	L-27 MAIN MEMORY III
 	—————————————————————————————————————————————————————————————————————
 	
-	
-	
+
+
+
+	HIGH SPEED STREAMING TRADE DATA
+	———————————————————————————————
+
+	STREAMING STOCK MARKET DATA WITH APACHE SPARK AND KAFKA -  JOHN O'NEILL/ YOUTUBE 
+
+       
+
+
+
+
+
 	
 	—————————————————————————————————————————————————————————————————————
 	MULTI-CORE PROGRAMMING PRIMER - MIT OPEN COURSEWARE
@@ -900,6 +930,10 @@
 	DISTRIBUTED ALGORITHMS - MIT OCW
 	
 	PROBABILISTIC SYSTEMS ANALYSIS AND APPLIED PROBABILITY - MIT OCW
+
+	DISTRIBUTED SYSTEMS (CS-6.824) - MIT OCW
+	
+	DISTRIBUTED COMPUTER SYSTEMS ENGINEERING - MIT OCW 
 	—————————————————————————————————————————————————————————————————————
 	
 	
@@ -1037,8 +1071,194 @@
 	A GENTLE GUIDE TO ASYNCHRONOUS PROGRAMMING WITH ECLIPSE VERT.X FOR JAVA DEVELOPERS
 	
 	HIGHER-ORDER FUNCTIONS, FUNCTIONS COMPOSITION, AND CURRYING IN JAVA 8 - DZONE
+
+
+
+
+
+	DISTRIBUTED SYSTEMS COURSE -  CHRIS COLOHAN/ GOOGLE 
+	———————————————————————————————————————————————————
+
+	WEBPAGE: <HTTP://WWW.DISTRIBUTEDSYSTEMSCOURSE.COM/>
+
+	i. 		INTRODUCTION
+	        	WHAT IS A DISTRIBUTED SYSTEM? [VIDEO, SLIDES]
+	        	WHY BUILD A DISTRIBUTED SYSTEM? [VIDEO, SLIDES]
+	        	HOW TO LEARN DISTRIBUTED SYSTEMS. [VIDEO, SLIDES]
+
+	ii.     HOW SYSTEMS FAIL
+	        	WHAT COULD GO WRONG? [VIDEO, SLIDES]
+	        	TYPES OF FAILURES [VIDEO, SLIDES]
+	        	BYZANTINE FAULT TOLERANCE [VIDEO, SLIDES]
+
+
+	iii.   HOW TO EXPRESS YOUR GOALS: SLIS, SLOS, AND SLAS [VIDEO, SLIDES]
+
+	iv.    CLASS PROJECT: BUILDING A MULTIUSER CHAT SERVER [VIDEO, SLIDES]
+
+
+	v.     HOW TO GET AGREEMENT -- CONSENSUS
+	       		PAXOS [VIDEO, SLIDES] [VIDEO REPLACED WITH...]
+	       		PAXOS SIMPLIFIED [VIDEO, SLIDES]
+
+
+	vi.    HOW COUNTERSTRIKE WORKS (A.K.A. TIME IN DISTRIBUTED SYSTEMS) [VIDEO, SLIDES]
+
+	vii.   HOW TO COMBINE UNRELIABLE COMPONENTS TO MAKE A MORE RELIABLE SYSTEM
+
+	viii.  HOW NODES COMMUNICATE -- RPCS
+
+	ix.    HOW NODES FIND EACH OTHER -- NAMING
+
+	x.     HOW TO PERSIST DATA -- DISTRIBUTED STORAGE
+
+	xi.    HOW TO SECURE YOUR SYSTEM
+
+	xii.   HOW TO OPERATE YOUR DISTRIBUTED SYSTEM -- THE ART OF SRE
+
+
+
+
+
+
+
+	DISTRIBUTED COMPUTER SYSTEMS (CS-436)  - UNI. OF WATERLOO
+	—————————————————————————————————————————————————————————
+
+
+		Introduction
+
+		Link layer
+
+		Addressing, ethernet
+
+		Switches, wireless, circuit switching
+
+		Packet switching, dijkstra's algorithm, loss, throughput
+
+		Network layer intro, datagrams, routing
+
+		Ipv4, ipv6, nat, tunnelling
+
+		Fipsec, ospf, bgp, broadcast routing
+
+		Transport layer, multiplexing, udp
+
+		Reliable data transfer
+
+		TCP
+
+		TCP fast retransmit, congestion, flow control
+
+		Http, smtp et. Al., dns
+
+		Mobile issues
+
+		Distributed architectures, cloud computing
+
+		Consistency, replication
+
+		Fault tolerance
+
+		Case studies
+
+		Security
+
+
+
+
+
+	DISTRIBUTED SYSTEMS (COS-418) - PRINCETON UNIVERSITY
+	—————————————————————————————————————————————————————————
+
+		SEC - A: FUNDAMENTALS
+		—————————————————————
+
+		Course overview, principles, mapreduce
+
+		Go systems programming
+
+		Network file systems
+
+		Network communication and remote procedure calls 	
+
+		Concurrency in go
+
+		Time synchronization and logical clocks		
+
+
+		SEC - B: fault tolerance
+		————————————————————————
+
+		Primary backup
+
+		Rpcs in go
+
+		Two-phase commit, introducing safety and liveness
+
+		Consensus I: flp impossibility, paxos 		
+
+		2pc and paxos review		
+
+		Consensus ii: replicated state machines, raft
+
+		Byzantine fault tolerance
+
+		Big data and spark
+
+
+		SEC - C: scalability, consistency, and transactions
+		———————————————————————————————————————————————————
+
+		Peer-to-peer systems and distributed hash tables
+
+		Eventual consistency
+
+		Scaling services: key-value storage
+
+		Strong consistency and cap theorem
+		Causal consistency
+
+		Concurrency control, locking, and recovery
+
+		Concurrency control 2 (occ, mvcc) and distributed transactions
+
+		Spanner 	
+
+
+		SEC - D: boutique topics
+		————————————————————————
+
+		Conflict resolution (ot), crypto, untrusted cloud services
+
+		Blockchains
+
+		Content delivery networks
+
+		Distributed mesh wireless networks
+
+
+		SEC - E: more big data processing
+		—————————————————————————————————
+
+		Graph processing
+
+		Chandy-lamport snapshotting	
+
+		Stream processing
+
+		Cluster scheduling
+
+
+
+
+
+
+
+
 	
-	
+	Cajo, the easiest way to accomplish distributed computing in Java - Java Code Geeks 
+
 	
 	
 	
@@ -1131,10 +1351,10 @@
 	
 	MAPREDUCE DESIGN PATTERNS: BUILDING EFFECTIVE ALGORITHMS AND ANALYTICS FOR HADOOP AND OTHER SYSTEMS - DONALD MINER, ADAM SHOOK
 
-        Building Microservices: Designing Fine-Grained Systems - Sam Newman
+    Building Microservices: Designing Fine-Grained Systems - Sam Newman
 
-        Reactive Messaging Patterns with the Actor Model: Applications and Integration in    Scala and Akka - Vaughn Vernon
-	————————————————————————————————————————————————————————————————————————————————————————
+    Reactive Messaging Patterns with the Actor Model: Applications and Integration in    Scala and Akka - Vaughn Vernon
+	——————————————————————————————————————————————————————————————————————————————————————
 	
 	
 	
