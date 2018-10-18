@@ -2,7 +2,7 @@
 	Note
 	————
 
-        The code is not mine and collected for the educational purpose from various blogs/ web-pages and books. Many instances, I refactored the code and occasionally, re-write some portion to adjust well.       
+    The code is not mine and collected for the educational purpose from various blogs/ web-pages and books. Many instances, I refactored the code and occasionally, re-write some portion to adjust well.       
 
 	
 	
@@ -969,6 +969,8 @@
 	————————————————————————————————————————————————————————
 	
 	
+
+	
 	
 	
 	CLOUDS, DISTRIBUTED SYSTEMS, NETWORKING SERIES - UNIVERSITY OF ILLINOIS/ COURSERA 
@@ -1019,10 +1021,6 @@
 	
 
 	
-	IBM SERIES  - JAVA THEORY AND PRACTICES - 
-	
-
-	
 	
 	
 	
@@ -1047,22 +1045,15 @@
 	TRANSACTION ISOLATION - POSTGRESQL.ORG
 	
 	
-	TOP 10 ALGORITHMS AND DATA STRUCTURES FOR COMPETITIVE PROGRAMMING [GEEKS FOR GEEKS ] <HTTP://WWW.GEEKSFORGEEKS.ORG/TOP-ALGORITHMS-AND-DATA-STRUCTURES-FOR-COMPETITIVE-PROGRAMMING/> 
+	JAVA CONCURRENCY ESSENTIAL - Java Code Geeks (JCG) 
 	
-	JAVA CONCURRENCY @ ORACLE <HTTP://DOCS.ORACLE.COM/JAVASE/TUTORIAL/ESSENTIAL/CONCURRENCY/>
-	
-	NETWORKING USING JAVA (CHAT MESSENGER) @ BUCKY ROBERTS JAVA INTERMEDIATE TUTORIAL (THE NEW BOSTON)
-	
-	JAVA CONCURRENCY ESSENTIAL - JAVACODEGEEKS <HTTP://WWW.JAVACODEGEEKS.COM/2015/09/JAVA-
-	CONCURRENCY-ESSENTIALS.HTML>
-	
-	JAVA ANNOTATION TUTORIAL - JAVACODEGEEKS<HTTP://WWW.JAVACODEGEEKS.COM/2014/11/JAVA-ANNOTATIONS-TUTORIAL.HTML>
+	JAVA ANNOTATION TUTORIAL - Java Code Geeks (JCG) 
 	
 	META-ANNOTATIONS IN JAVA
 	
-	CUSTOM NETWORKING <HTTP://DOCS.ORACLE.COM/JAVASE/TUTORIAL/NETWORKING/TOC.HTML>
+	CUSTOM NETWORKING - Oracle Tutorials 
 	
-	CRUNCHIFY JAVA MULTI-THREADING <CRUNCHIFY.COM>
+	JAVA MULTI-THREADING - CRUNCHIFY
 	
 	HIGH PERFORMANCE JAVA PERSISTENCE 
 	
@@ -1071,6 +1062,8 @@
 	A GENTLE GUIDE TO ASYNCHRONOUS PROGRAMMING WITH ECLIPSE VERT.X FOR JAVA DEVELOPERS
 	
 	HIGHER-ORDER FUNCTIONS, FUNCTIONS COMPOSITION, AND CURRYING IN JAVA 8 - DZONE
+
+	JAVA THEORY AND PRACTICES - IBM Talk series 
 
 
 
@@ -1081,12 +1074,14 @@
 
 	WEBPAGE: <HTTP://WWW.DISTRIBUTEDSYSTEMSCOURSE.COM/>
 
-	i. 		INTRODUCTION
+	i. 		Introduction 
+
 	        	WHAT IS A DISTRIBUTED SYSTEM? [VIDEO, SLIDES]
 	        	WHY BUILD A DISTRIBUTED SYSTEM? [VIDEO, SLIDES]
 	        	HOW TO LEARN DISTRIBUTED SYSTEMS. [VIDEO, SLIDES]
 
-	ii.     HOW SYSTEMS FAIL
+	ii.     How systems fail 
+
 	        	WHAT COULD GO WRONG? [VIDEO, SLIDES]
 	        	TYPES OF FAILURES [VIDEO, SLIDES]
 	        	BYZANTINE FAULT TOLERANCE [VIDEO, SLIDES]
@@ -1125,6 +1120,8 @@
 	DISTRIBUTED COMPUTER SYSTEMS (CS-436)  - UNI. OF WATERLOO
 	—————————————————————————————————————————————————————————
 
+	by Prof. S Keshav
+
 
 		Introduction
 
@@ -1138,7 +1135,7 @@
 
 		Network layer intro, datagrams, routing
 
-		Ipv4, ipv6, nat, tunnelling
+		Ipv4, ipv6, NAT, Tunnelling
 
 		Fipsec, ospf, bgp, broadcast routing
 
@@ -1171,7 +1168,7 @@
 	DISTRIBUTED SYSTEMS (COS-418) - PRINCETON UNIVERSITY
 	—————————————————————————————————————————————————————————
 
-		SEC - A: FUNDAMENTALS
+		SEC - A: Fundamentals 
 		—————————————————————
 
 		Course overview, principles, mapreduce
@@ -1187,7 +1184,7 @@
 		Time synchronization and logical clocks		
 
 
-		SEC - B: fault tolerance
+		SEC - B: Fault tolerance
 		————————————————————————
 
 		Primary backup
@@ -1207,7 +1204,7 @@
 		Big data and spark
 
 
-		SEC - C: scalability, consistency, and transactions
+		SEC - C: Scalability, consistency, and transactions
 		———————————————————————————————————————————————————
 
 		Peer-to-peer systems and distributed hash tables
@@ -1226,7 +1223,7 @@
 		Spanner 	
 
 
-		SEC - D: boutique topics
+		SEC - D: Boutique topics
 		————————————————————————
 
 		Conflict resolution (ot), crypto, untrusted cloud services
@@ -1238,7 +1235,7 @@
 		Distributed mesh wireless networks
 
 
-		SEC - E: more big data processing
+		SEC-E: More big data processing
 		—————————————————————————————————
 
 		Graph processing
@@ -1248,6 +1245,70 @@
 		Stream processing
 
 		Cluster scheduling
+
+
+
+
+	RUTGERS UNIVERSITY (CS 417) - DISTRIBUTED SYSTEMS
+	—————————————————————————————————————————————————
+
+		Introduction 
+
+		Networking
+		
+		Remote procedure calls
+		
+		RPC case studies
+		
+		Remote Procedure Calls
+		
+		Clock synchronization
+		
+		Precision Time Protocol
+		
+		Logical clocks
+		
+		Vector Clocks 
+		
+		Group communication
+		
+		Virtual synchrony
+
+		Mutual exclusion and election algorithms
+		
+		Consensus: Paxos
+		
+		Mutual exclusion and election algorithms
+		
+		Distributed transactions
+		
+		Distributed deadlock
+		
+		Network file systems
+		
+		Distributed file systems
+		
+		Distributed lookup services
+		
+		MapReduce
+		
+		Bigtable
+		
+		Spanner
+		
+		Other parallel computing frameworks
+		
+		Content Delivery Networks
+		
+		Clusters
+		
+		Cryptography
+		
+		Authentication & authorization
+
+		Caching & peer-to-peer systems
+		
+		
 
 
 
@@ -1355,19 +1416,20 @@
 
     Reactive Messaging Patterns with the Actor Model: Applications and Integration in    Scala and Akka - Vaughn Vernon
 	——————————————————————————————————————————————————————————————————————————————————————
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
