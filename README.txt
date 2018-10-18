@@ -1311,14 +1311,8 @@
 		
 
 
-
-
-
-
-
-
 	
-	Cajo, the easiest way to accomplish distributed computing in Java - Java Code Geeks 
+	Cajo, the easiest way for distributed computing in Java - Java Code Geeks (JCG)
 
 	
 	
