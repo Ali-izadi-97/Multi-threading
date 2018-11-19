@@ -8,7 +8,9 @@ import java.util.concurrent.RecursiveAction;
 import java.util.logging.Logger;
 
 
+
 public class CustomRecursiveAction extends RecursiveAction {
+
 
     private static Logger logger = Logger.getAnonymousLogger();
 
@@ -46,7 +48,6 @@ public class CustomRecursiveAction extends RecursiveAction {
 
         String result = work.toUpperCase();
 
-        logger.info("This result - (" + result + ") - was processed by " + Thread.currentThread()
-            .getName());
+        logger.info("This result - (" + result + ") - was processed by " + Thread.currentThread().getName());
     }
 }

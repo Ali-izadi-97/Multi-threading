@@ -1,6 +1,8 @@
 package com.balazsholczer.udemy;
 
+
 public class SequentialMaxFind {
+
 
 	public long sequentialMaxFinding(long[] nums, int highIndex) {
 
@@ -12,6 +14,7 @@ public class SequentialMaxFind {
 				max = nums[i]; 
 			}
 		}			
+		
 		return max;		
 	}
 }

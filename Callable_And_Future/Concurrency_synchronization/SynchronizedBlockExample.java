@@ -20,8 +20,14 @@ class FineGrainedSynchronizedCounter {
     }
 }
 
+
+
 public class SynchronizedBlockExample {
+
+
+
     public static void main(String[] args) throws InterruptedException {
+    
         ExecutorService executorService = Executors.newFixedThreadPool(10);
         FineGrainedSynchronizedCounter counter = new FineGrainedSynchronizedCounter();
 

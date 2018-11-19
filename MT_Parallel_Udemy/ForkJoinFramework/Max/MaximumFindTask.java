@@ -33,6 +33,7 @@ public class MaximumFindTask extends RecursiveTask<Long> {
 	}
 	
 	private long sequentialMaxFinding() {		
+
 		long max = nums[0];		
 		for(int i=lowIndex; i<highIndex;++i){
 			if( nums[i] > max){

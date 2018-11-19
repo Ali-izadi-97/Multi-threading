@@ -31,6 +31,7 @@ public class CustomRecursiveTask extends RecursiveTask<Integer> {
     }
 
     private Collection<CustomRecursiveTask> createSubtasks() {
+
         List<CustomRecursiveTask> dividedTasks = new ArrayList<>();
 
         dividedTasks.add(new CustomRecursiveTask(Arrays.copyOfRange(arr, 0, arr.length / 2)));

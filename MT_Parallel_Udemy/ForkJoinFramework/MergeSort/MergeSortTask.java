@@ -57,16 +57,22 @@ public class MergeSortTask extends RecursiveAction {
 		int k = 0;
 
 		while (i < leftSubarray.length && j < rightSubarray.length) {
-			if (leftSubarray[i] < rightSubarray[j])
+
+			if (leftSubarray[i] < rightSubarray[j]){
 				originalArray[k++] = leftSubarray[i++];
-			else
+			}
+				
+			else {
 				originalArray[k++] = rightSubarray[j++];
+			}				
 		}
 
-		while (i < leftSubarray.length)
+		while (i < leftSubarray.length){
 			originalArray[k++] = leftSubarray[i++];
-
-		while (j < rightSubarray.length)
+		}
+			
+		while (j < rightSubarray.length){
 			originalArray[k++] = rightSubarray[j++];
+		}
 	}
 }

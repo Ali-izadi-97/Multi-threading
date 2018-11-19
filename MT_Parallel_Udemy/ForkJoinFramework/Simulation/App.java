@@ -4,7 +4,6 @@ import java.util.concurrent.ForkJoinPool;
 
 public class App {
 
-
 	public static void main(String[] args) {
 		
 		ForkJoinPool forkJoinPool = new ForkJoinPool(Runtime.getRuntime().availableProcessors());

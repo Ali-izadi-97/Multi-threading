@@ -6,7 +6,6 @@ import java.util.concurrent.ForkJoinPool;
 
 public class App {
 
-
 	public static int THREASHOLD = 0;
 	
 	public static void main(String[] args) {
@@ -30,6 +29,7 @@ public class App {
 		System.out.println("Max: " + forkJoinPool.invoke(findTask));
 		System.out.println("Time taken: " + (System.currentTimeMillis() - start) + "ms");
 	}
+
 
 	private static long[] initializeNums() {
 		

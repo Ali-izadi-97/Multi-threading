@@ -19,6 +19,7 @@ public class Producer implements Runnable {
     final Integer numberOfMessagesToProduce;
     final AtomicInteger numberOfProducedMessages = new AtomicInteger();
 
+
     Producer(TransferQueue<String> transferQueue, String name, 
                                                   Integer numberOfMessagesToProduce) {
         this.transferQueue = transferQueue;

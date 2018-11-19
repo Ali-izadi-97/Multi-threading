@@ -19,7 +19,9 @@ public class Consumer implements Runnable {
     final int numberOfMessagesToConsume;
     final AtomicInteger numberOfConsumedMessages = new AtomicInteger();
 
+
     Consumer(TransferQueue<String> transferQueue, String name, int numberOfMessagesToConsume) {
+
         this.transferQueue = transferQueue;
         this.name = name;
         this.numberOfMessagesToConsume = numberOfMessagesToConsume;
@@ -29,6 +31,7 @@ public class Consumer implements Runnable {
     public void run() {
 
         for (int i = 0; i < numberOfMessagesToConsume; i++) {
+
             try {
                 LOG.debug("Consumer: " + name + " is waiting to take element...");
                 String element = transferQueue.take();

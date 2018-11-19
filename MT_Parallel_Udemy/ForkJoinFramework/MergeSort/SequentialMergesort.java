@@ -28,6 +28,7 @@ public class SequentialMergesort {
 		merge(left, right, nums);
 	}
 
+
 	private void merge(int[] leftSubarray, int[] rightSubarray, int[] originalArray) {
 		
 		int i = 0;
@@ -35,9 +36,12 @@ public class SequentialMergesort {
 		int k = 0;
 		
 		while (i < leftSubarray.length && j < rightSubarray.length) {
+
 			if (leftSubarray[i] < rightSubarray[j]){
 				originalArray[k++] = leftSubarray[i++];
-			}else{
+			}
+
+			else{
 				originalArray[k++] = rightSubarray[j++];
 			}
 		}
