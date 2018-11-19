@@ -7,6 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class Book {
 
+
 	private int id;
 	private Lock lock;
 
@@ -16,6 +17,7 @@ public class Book {
 	}
 
 	public void read(Student student) throws InterruptedException {
+
 		lock.tryLock(10, TimeUnit.MINUTES);
 		System.out.println(student + " starts reading " + this);
 		Thread.sleep(2000);

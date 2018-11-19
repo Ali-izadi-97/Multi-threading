@@ -15,10 +15,9 @@ public class App {
 		
 		try{
 			
-			books=new Book[Constants.NUMBER_OF_BOOKS];
-			students=new Student[Constants.NUMBER_OF_STUDENTS];
-			
-			
+			books = new Book[Constants.NUMBER_OF_BOOKS];
+			students = new Student[Constants.NUMBER_OF_STUDENTS];
+						
 			for(int i=0;i<Constants.NUMBER_OF_BOOKS;i++){
 				books[i]=new Book(i);
 			}
@@ -27,6 +26,7 @@ public class App {
 				students[i]=new Student(i,books);
 				executor.execute(students[i]);
 			}						
+			
 		}catch(Exception e){
 			e.printStackTrace();
 			executor.shutdown();

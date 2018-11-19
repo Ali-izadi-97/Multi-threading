@@ -399,13 +399,31 @@
 	
 	
 	
-	————————————————————————————————————————————————————————————————————————————————————————
+	Distributed Systems Architecture - Jakob Jenkov 
+	———————————————————————————————————————————————
+
+	Software Architecture   
+	ION   
+	IAP   
+	IAP Tools for Java  
+	Grid Ops for Java  
+	SOA - Service Oriented Architecture   
+	Web Services   
+	SOAP   
+	WSDL 2.0   
+	RSync   
+	Peer-to-Peer (P2P) Networks
+
+
+	———————————————————————————————————————————————
+	Java Multithreaded Servers   - Jakob Jenkov 
 	
-	MULTITHREADED SERVERS IN JAVA <HTTP://TUTORIALS.JENKOV.COM/JAVA-MULTITHREADED-SERVERS/INDEX.HTML>
+	Java Networking    - Jakob Jenkov 
 	
-	JAVA IO TUTORIAL <HTTP://TUTORIALS.JENKOV.COM/JAVA-IO/INDEX.HTML>
+	Java NIO    - Jakob Jenkov 
 	
-	JAVA NIO TUTORIAL <HTTP://TUTORIALS.JENKOV.COM/JAVA-NIO/INDEX.HTML>
+	Java IO    - Jakob Jenkov 
+	———————————————————————————————————————————————
 	
 	
 	

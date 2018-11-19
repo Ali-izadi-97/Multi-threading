@@ -4,7 +4,6 @@ import java.util.Random;
 
 public class Philosopher implements Runnable {
 
-
 	private int id;
 	private ChopStick leftChopStick;
 	private ChopStick rightChopStick;
@@ -12,20 +11,24 @@ public class Philosopher implements Runnable {
 	private volatile boolean isFull = false;
 	private Random random;
 	private int eatingCounter;
+
 	
 	public Philosopher(int id, ChopStick leftChopStick, ChopStick rightChopStick){
+
 		this.id = id;
+
 		this.leftChopStick = leftChopStick;
 		this.rightChopStick = rightChopStick;
+
 		this.random = new Random();
 	}
 	
 	@Override
 	public void run() {
 		
-		try{
+		try {
 			
-			while( !isFull ){
+			while(!isFull){
 				
 				think();
 				
@@ -38,7 +41,9 @@ public class Philosopher implements Runnable {
 					leftChopStick.putDown(this, State.LEFT);
 				}	
 			}
-		}catch(Exception e){
+		}
+
+		catch(Exception e){
 			e.printStackTrace();
 		}
 	}
