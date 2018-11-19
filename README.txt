@@ -403,6 +403,31 @@
 	———————————————————————————————————————————————
 
 	Software Architecture   
+
+			Single Process Architecture
+			
+			Computer Architecture
+			
+			Client-Server Architecture
+			
+			N Tier Architecture
+			
+			RIA Architecture
+			
+			Service Oriented Architecture (SOA)
+			
+			Event-driven Architecture
+			
+			Peer-to-peer (P2P) Architecture
+			
+			Scalable Architectures
+			
+			Load Balancing
+			
+			Caching Techniques
+
+
+
 	ION   
 	IAP   
 	IAP Tools for Java  
