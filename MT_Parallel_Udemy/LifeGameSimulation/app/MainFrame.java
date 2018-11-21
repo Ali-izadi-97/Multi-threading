@@ -22,13 +22,17 @@ import callbacks.ButtonListener;
 
 public class MainFrame extends JFrame implements ButtonListener{
 
+
 	private static final long serialVersionUID = 1L;
+
 	private Board board;
 	private Toolbar toolbar;
 	private TimePanel timePanel;
 	private ExecutorService executor;
+
 	
 	public MainFrame(){
+
 		super("Conway's Game");
 		
 		setJMenuBar(createMenuBar());
@@ -67,6 +71,7 @@ public class MainFrame extends JFrame implements ButtonListener{
 		exitMenuItem.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent arg0) {
+
 				int action = JOptionPane.showConfirmDialog(MainFrame.this, "Do you want to exit?","Warning",JOptionPane.YES_NO_OPTION);
 				if( action == JOptionPane.OK_OPTION ){
 					System.gc();

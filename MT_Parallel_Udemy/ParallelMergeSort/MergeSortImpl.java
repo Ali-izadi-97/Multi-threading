@@ -18,7 +18,6 @@ class Node {
     }
 
     public void displayNode() {
-
         System.out.print("[" + item + "] ");
     }
 }
@@ -35,7 +34,6 @@ class myMergesort {
     public boolean isEmpty() {
         return (first == null);
     }
-
 
     public void insert(int val) {
 
@@ -116,11 +114,8 @@ implement merge sort using ll*/
 
 
 
-
+/*question: design an algorithm to implement merge sort*/
 public class MergeSortImpl {
-
-    /*question: design an algorithm
-	to implement merge sort*/
 
 	/*Sort each pair of elements. Then, sort every four elements
 	by merging every two pairs. Then, sort every 8 elements, etc.*/
@@ -165,8 +160,7 @@ public class MergeSortImpl {
     }
 	/*END of solution: design an algorithm
 	to implement merge sort*/
-
-
+    
 }
 
 

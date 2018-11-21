@@ -37,5 +37,8 @@ public class PhaserUnitTest {
 
 
         ph.arriveAndDeregister();
+
+        // still we get 2 phases
+        assertEquals(2, ph.getPhase());
     }
 }

@@ -1,11 +1,15 @@
 package com.balazsholczer.udemy;
 
+
 public class ParallelWorker extends Thread {
 
 	private int[] nums;
+
 	private int low;
 	private int high;
+
 	private int partialSum;
+
 
 	public ParallelWorker(int[] nums, int low, int high) {
 		this.nums = nums;

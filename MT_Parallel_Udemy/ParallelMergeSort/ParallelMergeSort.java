@@ -52,8 +52,9 @@ public class ParallelMergeSort {
 	 */
 	public void mergeSort(int[] a) {
 		
-		if (a.length <= 1)
+		if (a.length <= 1){
 			return;
+		}
 
 		int mid = a.length / 2;
 

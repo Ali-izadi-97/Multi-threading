@@ -10,13 +10,13 @@ import javax.swing.JPanel;
 
 public class Cell extends JPanel {
 
-
 	private static final long serialVersionUID = 1L;
 	private int id;
 	private Board board;
 	private boolean isAlive = false;
 
 	public Cell(final int id, final Board board) {
+
 		this.id = id;
 		this.board = board;
 

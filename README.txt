@@ -998,14 +998,16 @@
 
 
 
+	ETH ZURICH 
+	——————————
 
-	ETH Zurich: Distributed Systems     Webpage: http://dcg.ethz.ch/lectures/podc_allstars/
+	Distributed Systems - ETH Zurich (https://disco.ethz.ch/courses/distsys/)
 	
-	ETH Zurich: Distributed Systems-II  Webpage: http://dcg.ethz.ch/lectures/distsys)
+	Principles of Distributed Computing - ETH Zurich (https://disco.ethz.ch/courses/podc/)
 
+	Discrete Event Systems - ETH Zurich (https://disco.ethz.ch/courses/des/)
 
-
-	TU Dresden - MSc Distributed Systems Engineering 
+	Operating Systems & Networks - ETH Zurich (https://disco.ethz.ch/courses/ti2/)
 	—————————————————————————————————————————————————————————————————————
 	
 	
@@ -1065,13 +1067,10 @@
 	
 	
 	
-	
-	
-	———————————————————————————————————————————————————————————————————————————————————————
-	————————————————————
+
 	COMPUTER ARCHITEKTUR
 	————————————————————
-	———————————————————————————————————————————————————————————————————————————————————————
+
 	COMPUTER ARCHITECTURE - COURSERA/ PRINCETON UNIVERSITY
 	
 	COMPUTER SYSTEM ARCHITECTURE - MIT OPEN COURSEWARE 
@@ -1099,7 +1098,12 @@
 	BLOG POSTS, WEB PAGES 
 	—————————————————————
 	
-	
+
+	THE LMAX ARCHITECTURE - MARTIN FOWLER 
+
+	MECHANICAL SYMPATHY - <HTTPS://MECHANICAL-SYMPATHY.BLOGSPOT.COM/>
+
+
 	LINEARIZABILITY, SERIALIZABILITY, TRANSACTION ISOLATION AND CONSISTENCY MODELS - DDDPAUL.GITHUB.IO
 	
 	LINEARIZABILITY VERSUS SERIALIZABILITY - PETER BAILIS
@@ -1189,11 +1193,8 @@
 
 
 
-	DISTRIBUTED COMPUTER SYSTEMS (CS-436)  - UNI. OF WATERLOO
+	DISTRIBUTED COMPUTER SYSTEMS (CS-436)  - UNI. OF WATERLOO/ Prof. S Keshav
 	—————————————————————————————————————————————————————————
-
-	by Prof. S Keshav
-
 
 		Introduction
 
@@ -1240,83 +1241,83 @@
 	DISTRIBUTED SYSTEMS (COS-418) - PRINCETON UNIVERSITY
 	—————————————————————————————————————————————————————————
 
-		SEC - A: Fundamentals 
-		—————————————————————
+	SEC - A: Fundamentals 
+	—————————————————————
 
-		Course overview, principles, mapreduce
+	Course overview, principles, mapreduce
 
-		Go systems programming
+	Go systems programming
 
-		Network file systems
+	Network file systems
 
-		Network communication and remote procedure calls 	
+	Network communication and remote procedure calls 	
 
-		Concurrency in go
+	Concurrency in go
 
-		Time synchronization and logical clocks		
-
-
-		SEC - B: Fault tolerance
-		————————————————————————
-
-		Primary backup
-
-		Rpcs in go
-
-		Two-phase commit, introducing safety and liveness
-
-		Consensus I: flp impossibility, paxos 		
-
-		2pc and paxos review		
-
-		Consensus ii: replicated state machines, raft
-
-		Byzantine fault tolerance
-
-		Big data and spark
+	Time synchronization and logical clocks		
 
 
-		SEC - C: Scalability, consistency, and transactions
-		———————————————————————————————————————————————————
+	SEC - B: Fault tolerance
+	————————————————————————
 
-		Peer-to-peer systems and distributed hash tables
+	Primary backup
 
-		Eventual consistency
+	Rpcs in go
 
-		Scaling services: key-value storage
+	Two-phase commit, introducing safety and liveness
 
-		Strong consistency and cap theorem
-		Causal consistency
+	Consensus I: flp impossibility, paxos 		
 
-		Concurrency control, locking, and recovery
+	2pc and paxos review		
 
-		Concurrency control 2 (occ, mvcc) and distributed transactions
+	Consensus ii: replicated state machines, raft
 
-		Spanner 	
+	Byzantine fault tolerance
 
-
-		SEC - D: Boutique topics
-		————————————————————————
-
-		Conflict resolution (ot), crypto, untrusted cloud services
-
-		Blockchains
-
-		Content delivery networks
-
-		Distributed mesh wireless networks
+	Big data and spark
 
 
-		SEC-E: More big data processing
-		—————————————————————————————————
+	SEC - C: Scalability, consistency, and transactions
+	———————————————————————————————————————————————————
 
-		Graph processing
+	Peer-to-peer systems and distributed hash tables
 
-		Chandy-lamport snapshotting	
+	Eventual consistency
 
-		Stream processing
+	Scaling services: key-value storage
 
-		Cluster scheduling
+	Strong consistency and cap theorem
+	Causal consistency
+
+	Concurrency control, locking, and recovery
+
+	Concurrency control 2 (occ, mvcc) and distributed transactions
+
+	Spanner 	
+
+
+	SEC - D: Boutique topics
+	————————————————————————
+
+	Conflict resolution (ot), crypto, untrusted cloud services
+
+	Blockchains
+
+	Content delivery networks
+
+	Distributed mesh wireless networks
+
+
+	SEC-E: More big data processing
+	—————————————————————————————————
+
+	Graph processing
+
+	Chandy-lamport snapshotting	
+
+	Stream processing
+
+	Cluster scheduling
 
 
 
@@ -1395,19 +1396,23 @@
 	JAVA SPECIALISTS TEACHABLE (https://javaspecialists.teachable.com)
 	—————————————————————————————————————————————————————————————————
 
-	Extreme Java Concurrency Performance (for Java 8) - Java Specialists
+	Extreme Java Concurrency Performance (Java 8) - Java Specialists (By Dr. Heinz Kabutz)
 	
-	Java Concurrency in Practice Bundle - Java Specialists
+	Java Concurrency in Practice Bundle - Java Specialists (By Dr. Heinz Kabutz)
 
-	Data Structures in Java -  Java Specialists
+	Threading essentials - Java Specialists (By Dr. Heinz Kabutz)
 
-	Threading essentials - Java Specialists
 
-	Transmogrifier: Java NIO and Non-Blocking IO - Java Specialists
+	Transmogrifier: Java NIO and Non-Blocking IO - Java Specialists (By Dr. Heinz Kabutz)
 
-	Transition to Continuous Delivery with Enterprise Java - Java Specialists
+	Refactoring to Java 8 Streams and Lambdas - Java Specialists (By Dr. Heinz Kabutz)
 
-	Refactoring to Java 8 Streams and Lambdas - Java Specialists
+	Transition to Continuous Delivery with Enterprise Java - Java Specialists (By Dr. Heinz Kabutz)
+
+
+	Data Structures in Java - Java Specialists (By Dr. Heinz Kabutz)
+
+
 
 
 	
@@ -1426,6 +1431,12 @@
 	JAVA PERFORMANCE
 	————————————————
 	NETTY, VERT.X, QBIT, JCTOOLS AND CHRONICLE
+
+
+
+
+
+
 	
 	
 	

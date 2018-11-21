@@ -5,11 +5,23 @@ import java.util.Random;
 
 
 /*
-	These implementations are concurrent implementation
+These implementations are concurrent implementation
 */
 public class App {
 
 	public static Random random = new Random();
+
+	public static int[] createRandomArray() {
+
+		int[] a = new int[10];
+		
+		for (int i = 0; i < 10; i++) {
+			a[i] = random.nextInt(10000);			
+		}
+
+		return a;
+	}
+
 	
 	public static void main(String[] args) throws Throwable {
 		
@@ -17,7 +29,6 @@ public class App {
 		
 		//int[] nums = {4,2,6,5,44,78,-4,0,1};
 				
-
 		System.out.println("Number of threads/cores: " + numOfThreads);
 		System.out.println("");
 
@@ -61,13 +72,5 @@ public class App {
 		
 		//mergeSort.parallelMergeSort(0, nums.length-1, numOfThreads);
 		//mergeSort.showResult();		
-	}
-	
-	public static int[] createRandomArray() {
-		int[] a = new int[10];
-		for (int i = 0; i < 10; i++) {
-			a[i] = random.nextInt(10000);			
-		}
-		return a;
 	}
 }

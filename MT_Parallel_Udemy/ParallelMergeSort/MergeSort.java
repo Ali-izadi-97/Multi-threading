@@ -42,6 +42,7 @@ public class MergeSort {
 	private Thread mergeSortThread(int low, int high, int numOfThreads) {
 
 		return new Thread() {
+
 			@Override
 			public void run() {
 				parallelMergeSort(low, high, numOfThreads / 2);
@@ -76,6 +77,7 @@ public class MergeSort {
 		// Copy the smallest values from either the left or the right side back
 		// to the original array
 		while ((i <= middle) && (j <= high)) {
+
 			if (tempArray[i] <= tempArray[j]) {
 				nums[k] = tempArray[i];
 				i++;
@@ -83,12 +85,15 @@ public class MergeSort {
 				nums[k] = tempArray[j];
 				j++;
 			}
+
 			k++;
 		}
 
 		// Copy the rest of the left side of the array into the target array
 		while (i <= middle) {
+
 			nums[k] = tempArray[i];
+
 			k++;
 			i++;
 		}

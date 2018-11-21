@@ -8,12 +8,16 @@ import javax.swing.JPanel;
 
 import constants.Constants;
 
+
 public class Board extends JPanel {
+
 
 	private static final long serialVersionUID = 1L;
 	private Cell[] cells;
+
 	private Set<Integer> cellsToDie = new HashSet<>();
 	private Set<Integer> cellsToBorn = new HashSet<>();
+
 	private int countLiveNeighbours=0;
 	private TimePanel timePanel;
 	
@@ -48,13 +52,17 @@ public class Board extends JPanel {
 			if( cells[i+Constants.NUMBER_OF_ROWS].isAlive() ) countLiveNeighbours++;
 			if( cells[i+Constants.NUMBER_OF_ROWS-1].isAlive() ) countLiveNeighbours++;
 			
-			if( countLiveNeighbours == 3 && !cells[i].isAlive()) cellsToBorn.add(i);
+			if( countLiveNeighbours == 3 && !cells[i].isAlive()) {
+				cellsToBorn.add(i);
+			}
 			
 			if( countLiveNeighbours < 2 || countLiveNeighbours > 3){
 				cellsToDie.add(i);
 			}
 			
-			if( countLiveNeighbours == 3 && cells[i].isAlive() ) cellsToBorn.add(i);
+			if( countLiveNeighbours == 3 && cells[i].isAlive() ) {
+				cellsToBorn.add(i);
+			}
 		}
 		
 		repaintBoard();
@@ -78,7 +86,9 @@ public class Board extends JPanel {
 	}
 	
 	public void paintBoard(){
+
 		for(int i=0;i<Constants.NUMBER_OF_ROWS*Constants.NUMBER_OF_COLS;i++){
+		
 			cells[i]=new Cell(i,this);
 			cells[i].setAlive(false);
 			add(cells[i]);

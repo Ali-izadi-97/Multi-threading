@@ -8,8 +8,8 @@ import com.minerapp.constants.Constants;
 
 public class Board extends JPanel {
 
-
 	private static final long serialVersionUID = 1L;
+
 	private Cell[] cells;
 	private int numberOfMines;
 
@@ -27,7 +27,9 @@ public class Board extends JPanel {
 		this.numberOfMines--;
 	}
 
+
 	private void initializeBoard() {
+
 		for (int i = 0; i < Constants.BOARD_COLUMNS * Constants.BOARD_ROWS; i++) {
 
 			cells[i] = new Cell(i + 1);
@@ -90,6 +92,7 @@ public class Board extends JPanel {
 	}
 
 	private void sleepThread(int duration) {
+
 		try{
 			Thread.sleep(duration);
 		}catch(InterruptedException e){

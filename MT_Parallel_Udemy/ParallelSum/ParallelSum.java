@@ -2,6 +2,7 @@ package com.balazsholczer.udemy;
 
 public class ParallelSum {
 
+
 	private ParallelWorker[] sums;
 	private int numOfThreads;
 	
