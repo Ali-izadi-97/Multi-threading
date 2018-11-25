@@ -1562,10 +1562,6 @@
 	
 	DISTRIBUTED ALGORITHMS BY PROF. NANCY LYNCH
 	
-	JAVA PERFORMANCE: THE DEFINITIVE GUIDE - SCOTT OAKS
-	
-	JAVA PERFORMANCE TUNING - JACK SHIRAZI 
-	
 	PROGRAMMING FOR THE JAVA™ VIRTUAL MACHINE - JOSHUA ENGEL
 	
 	DESIGNING DISTRIBUTED SYSTEMS: PATTERNS AND PARADIGMS FOR SCALABLE, RELIABLE SERVICES - BRENDAN BURNS/ OREILLY
@@ -1599,6 +1595,12 @@
 
 	Distributed Computing with Go - V.N. Nikhil Anurag
 
+
+	Java Network Programming: Developing Networked Applications - Elliotte Rusty Harold
+
+	Java Performance: The Definitive Guide - Scott Oaks
+	
+	Java Performance Tuning - Jack Shirazi 
 
 
 	High-Performance Java Persistence - Vlad Mihalcea
