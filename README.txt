@@ -458,6 +458,9 @@
 	———————————————————————————————
 	
 
+	Even if an object is immutable and thereby thread safe, the reference to this object may not be thread safe. 
+
+
 	Concurrency Models
 	——————————————————
 
@@ -570,15 +573,34 @@
 
 
 
+	Full volatile Visibility Guarantee
+	——————————————————————————————————
+
+	Actually, the visibility guarantee of Java volatile goes beyond the volatile variable itself. The visibility guarantee is as follows:
+
+		i.  If Thread A writes to a volatile variable and Thread B subsequently reads the same volatile variable, then all variables visible to Thread A before writing the volatile variable, will also be visible to Thread B after it has read the volatile variable.
+
+		ii. If Thread A reads a volatile variable, then all all variables visible to Thread A when reading the volatile variable will also be re-read from main memory.
+
+
+
+
+	The Java VM and the CPU are allowed to reorder instructions in the program for performance reasons, as long as the semantic meaning of the instructions remain the same. 
 
 
 
 
 
+	The Java volatile Happens-Before Guarantee
+	——————————————————————————————————————————
+
+	To address the instruction reordering challenge, the Java volatile keyword gives a "happens-before" guarantee, in addition to the visibility guarantee. The happens-before guarantee guarantees that:
+
+		Reads from and writes to other variables cannot be reordered to occur after a write to a volatile variable, if the reads / writes originally occurred before the write to the volatile variable. 
+		The reads / writes before a write to a volatile variable are guaranteed to "happen before" the write to the volatile variable. Notice that it is still possible for e.g. reads / writes of other variables located after a write to a volatile to be reordered to occur before that write to the volatile. Just not the other way around. From after to before is allowed, but from before to after is not allowed.
 
 
-
-
+		Reads from and writes to other variables cannot be reordered to occur before a read of a volatile variable, if the reads / writes originally occurred after the read of the volatile variable. Notice that it is possible for reads of other variables that occur before the read of a volatile variable can be reordered to occur after the read of the volatile. Just not the other way around. From before to after is allowed, but from after to before is not allowed.
 
 
 
@@ -816,7 +838,7 @@
 
 
 
-	—————————————————————————————————————————————————————————————————————————
+
     PLURALSIGHT
     ———————————
 
@@ -828,7 +850,7 @@
 	—————————————————————————————————————————————————————————————————————————
 
 
-	—————————————————————————————————————————————————————————————————————————————————————
+
 	MEMORY MANAGEMENT
 	—————————————————
 	

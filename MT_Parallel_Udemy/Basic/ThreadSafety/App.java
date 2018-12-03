@@ -30,16 +30,29 @@ public class App {
 
         NotThreadSafe sharedInstance = new NotThreadSafe();
 
-        new Thread(new MyRunnable(sharedInstance)).start();
-        new Thread(new MyRunnable(sharedInstance)).start();
+        Thread t1 = new Thread(new MyRunnable(sharedInstance));
+        Thread t2 = new Thread(new MyRunnable(sharedInstance));
+
+        t1.start();
+        t2.start();
+
+        try {
+            
+            t1.join();
+            t2.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
 
         /*
          * if two threads call the add() method simultaneously on
          * different instances then it does not lead to race condition.
          * */
-//        new Thread(new MyRunnable(new NotThreadSafe())).start();
-//        new Thread(new MyRunnable(new NotThreadSafe())).start();
+
+//      Thread t1 = new Thread(new MyRunnable(new NotThreadSafe())).start();
+//      Thread t2 = new Thread(new MyRunnable(new NotThreadSafe())).start();
+
 
         System.out.println(sharedInstance.toString());
     }
