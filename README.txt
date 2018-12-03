@@ -468,6 +468,20 @@
 	Of course distributed systems have the extra challenge that the network may fail, or a remote computer or process is down etc. But a concurrent system running on a big server may experience similar problems if a CPU fails, a network card fails, a disk fails etc. The probability of failure may be lower, but it can theoretically still happen.
 
 
+	Categories of the concurrecy models
+	———————————————————————————————————
+
+		A. Parallel Workers
+
+		B. Assembly Line (Reactive Systems/ Event-Driven Systems/ Shared Nothing)
+
+		C. Functional Parallelism
+
+
+
+
+
+
 	A. Parallel Workers
 	———————————————————
 
