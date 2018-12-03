@@ -474,6 +474,9 @@
 		A. Parallel Workers
 
 		B. Assembly Line (Reactive Systems/ Event-Driven Systems/ Shared Nothing)
+			
+			i.  Actors 
+			ii. Channels
 
 		C. Functional Parallelism
 
