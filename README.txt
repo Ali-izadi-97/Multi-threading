@@ -398,59 +398,11 @@
 	
 	
 	
-	
-	Distributed Systems Architecture - Jakob Jenkov 
-	———————————————————————————————————————————————
-
-	Software Architecture   
-
-			Single Process Architecture
-			
-			Computer Architecture
-			
-			Client-Server Architecture
-			
-			N Tier Architecture
-			
-			RIA Architecture
-			
-			Service Oriented Architecture (SOA)
-			
-			Event-driven Architecture
-			
-			Peer-to-peer (P2P) Architecture
-			
-			Scalable Architectures
-			
-			Load Balancing
-			
-			Caching Techniques
 
 
 
-	ION   
-	IAP   
-	IAP Tools for Java  
-	Grid Ops for Java  
-	SOA - Service Oriented Architecture   
-	Web Services   
-	SOAP   
-	WSDL 2.0   
-	RSync   
-	Peer-to-Peer (P2P) Networks
 
 
-	———————————————————————————————————————————————
-	Java Multithreaded Servers   - Jakob Jenkov 
-	
-	Java Networking    - Jakob Jenkov 
-	
-	Java NIO    - Jakob Jenkov 
-	
-	Java IO    - Jakob Jenkov 
-	———————————————————————————————————————————————
-	
-	
 	
 
 
@@ -582,13 +534,7 @@
 
 		ii. If Thread A reads a volatile variable, then all all variables visible to Thread A when reading the volatile variable will also be re-read from main memory.
 
-
-
-
 	The Java VM and the CPU are allowed to reorder instructions in the program for performance reasons, as long as the semantic meaning of the instructions remain the same. 
-
-
-
 
 
 	The Java volatile Happens-Before Guarantee
@@ -602,6 +548,12 @@
 
 		Reads from and writes to other variables cannot be reordered to occur before a read of a volatile variable, if the reads / writes originally occurred after the read of the volatile variable. Notice that it is possible for reads of other variables that occur before the read of a volatile variable can be reordered to occur after the read of the volatile. Just not the other way around. From before to after is allowed, but from after to before is not allowed.
 
+
+
+	Java ThreadLocal
+	————————————————
+
+	The ThreadLocal class in Java enables you to create variables that can only be read and written by the same thread. Thus, even if two threads are executing the same code, and the code has a reference to a ThreadLocal variable, then the two threads cannot see each other's ThreadLocal variables.
 
 
 
@@ -682,103 +634,317 @@
 	JAVA CONCURRENCY REFERENCES
 	————————————————————————————————————————————————————————————————————————————————————————
 	
+
+
+
+
+
+
+	Multithreaded Servers/ Jakob Jenkov 
+	————————————————————————————————————
 	
-	———————————————————————————————————————————————————————————————————————————————————————
+	Singlethreaded Server In Java
 	
+	Multithreaded Server In Java
 	
-	——————————————————————————————————————————————————————————————————————————————
-	
-	—————————————————————————————————————————
-	JAVA MULTITHREADED SERVERS - JAKOB JENKOV 
-	—————————————————————————————————————————
-	
-	MULTITHREADED SERVERS IN JAVA
-	
-	SINGLETHREADED SERVER IN JAVA
-	
-	MULTITHREADED SERVER IN JAVA
-	
-	THREAD POOLED SERVER
-	——————————————————————————————————————————————————————————————————————————————
+	Thread Pooled Server
+
 	
 	
 	
-	————————————————————————————————————————————————————————————————————————————————
+
 	
-	———————————————————————————————
-	JAVA PERFORMANCE - JAKOB JENKOV 
+
+	Java Performance/ Jakob Jenkov 
 	———————————————————————————————
 	
-	MODERN HARDWARE
+	Modern Hardware
 	
-	MEMORY MANAGEMENT FOR PERFORMANCE
+	Memory Management For Performance
 	
-	JMH - JAVA MICROBENCHMARK HARNESS
+	Jmh - Java Microbenchmark Harness
 	
-	JAVA RING BUFFER
+	Java Ring Buffer
 	
-	JAVA RESIZABLE ARRAY
+	Java Resizable Array
 	
-	JAVA FOR VS. SWITCH PERFORMANCE
+	Java For VS Switch Performance
 	
-	JAVA ARRAYLIST VS. OPENARRAYLIST PERFORMANCE
+	Java Arraylist Vs. Openarraylist Performance
 	
-	JAVA HIGH PERFORMANCE READ PATTERNS
+	Java High Performance Read Patterns
 	
-	MICRO BATCHING
-	————————————————————————————————————————————————————————————————————————————————
-	
-	
-	
+	Micro Batching 
+
+
+
+
+
+
+
+
+	Java Networking/ Jakob Jenkov 
 	———————————————————————————————
-	JAVA NETWORKING - JAKOB JENKOV 
-	———————————————————————————————
 	
-	JAVA NETWORKING: SOCKET
+	Java Networking: Socket
 	
-	JAVA NETWORKING: SERVERSOCKET
+	Java Networking: Serversocket
 	
-	JAVA NETWORKING: UDP DATAGRAMSOCKET
+	Java Networking: Udp Datagramsocket
 	
-	JAVA NETWORKING: URL + URLCONNECTION
+	Java Networking: Url + Urlconnection
 	
-	JAVA NETWORKING: JarURLConnection
+	Java Networking: Jarurlconnection
 	
-	JAVA NETWORKING: INETADDRESS
+	Java Networking: Inetaddress
 	
-	JAVA NETWORKING: PROTOCOL DESIGN
-	———————————————————————————————————————————————————————————————————————————————————————
+	Java Networking: Protocol Design
+
 	
 	
-	
-	
-	
-	JAVA CONCURRENCY - ABHI 
+		
+
+
+	Java NIO/ Jakob Jenkov 
 	———————————————————————
+
+	Java NIO Overview
 	
-	JAVA 5 CONCURRENCY - ABHI ON JAVA
+	Java NIO Channel
 	
-	JAVA 5 CONCURRENCY: SELECTING LOCKS - ABHI ON JAVA
+	Java NIO Buffer
 	
-	JAVA 5 CONCURRENCY: SELECTING SYNCHRONIZERS - ABHI ON JAVA
+	Java NIO Scatter / Gather
 	
-	JAVA 5 CONCURRENCY: SYNCHRONIZERS - ABHI ON JAVA
+	Java NIO Channel To Channel Transfers
 	
-	JAVA 5 CONCURRENCY: CONDITIONS - ABHI ON JAVA
+	Java NIO Selector
 	
-	JAVA 5 CONCURRENCY: READER-WRITER LOCKS - ABHI ON JAVA
+	Java NIO FileChannel
 	
-	JAVA 5 CONCURRENCY: LOCKS - ABHI ON JAVA
+	Java NIO SocketChannel
 	
-	JAVA 5 CONCURRENCY: CALLABLE AND FUTURE - ABHI ON JAVA
+	Java NIO ServerSocketChannel
 	
-	JAVA 5 EXECUTORS: THREADPOOL - ABHI ON JAVA
+	Java NIO: Non-blocking Server
 	
-	JAVA 5: NEW FEATURES IN CONCURRENCY - ABHI ON JAVA
+	Java NIO DatagramChannel
 	
-	JAVA: HANDLING INTERRUPTS - ABHI ON JAVA
-	————————————————————————————————————————————————————————————————————————————————————————
+	Java NIO Pipe
 	
+	Java NIO Vs. Io
+	
+	Java NIO Path
+	
+	Java NIO Files
+	
+	Java NIO AsynchronousFileChannel
+
+
+
+	Java IO Tutorial/ Jakob Jenkov 
+	——————————————————————————————
+
+	Java IO Overview
+
+	Java IO: Files
+
+	Java IO: Pipes
+
+	Java IO: Networking
+
+	Java IO: Byte & Char Arrays
+
+	Java IO: System.in, System.out, and System.error
+
+	Java IO: Streams
+
+	Java IO: Input Parsing
+
+	Java IO: Readers and Writers
+
+	Java IO: Concurrent IO
+
+	Java IO: Exception Handling
+
+	Java IO: InputStream
+
+	Java IO: OutputStream
+
+	Java IO: FileInputStream
+
+	Java IO: FileOutputStream
+
+	Java IO: RandomAccessFile
+
+	Java IO: File
+
+	Java IO: PipedInputStream
+
+	Java IO: PipedOutputStream
+
+	Java IO: ByteArrayInputStream
+
+	Java IO: ByteArrayOutputStream
+
+	Java IO: FilterInputStream
+
+	Java IO: FilterOutputStream
+
+	Java IO: BufferedInputStream
+
+	Java IO: BufferedOutputStream
+
+	Java IO: PushbackInputStream
+
+	Java IO: SequenceInputStream
+
+	Java IO: DataInputStream
+
+	Java IO: DataOutputStream
+
+	Java IO: PrintStream
+
+	Java IO: ObjectInputStream
+
+	Java IO: ObjectOutputStream
+
+	Java IO: Serializable
+
+	Java IO: Reader
+
+	Java IO: Writer
+
+	Java IO: InputStreamReader
+
+	Java IO: OutputStreamWriter
+
+	Java IO: FileReader
+
+	Java IO: FileWriter
+
+	Java IO: PipedReader
+
+	Java IO: PipedWriter
+
+	Java IO: CharArrayReader
+
+	Java IO: CharArrayWriter
+
+	Java IO: BufferedReader
+
+	Java IO: BufferedWriter
+
+	Java IO: FilterReader
+
+	Java IO: FilterWriter
+
+	Java IO: PushbackReader
+
+	Java IO: LineNumberReader
+
+	Java IO: StreamTokenizer
+
+	Java IO: PrintWriter
+
+	Java IO: StringReader
+
+	Java IO: StringWriter
+
+
+
+
+	
+	Distributed Systems Architecture - Jakob Jenkov 
+	———————————————————————————————————————————————
+
+	Software Architecture   
+
+			Single Process Architecture
+			
+			Computer Architecture
+			
+			Client-Server Architecture
+			
+			N Tier Architecture
+			
+			RIA Architecture
+			
+			Service Oriented Architecture (SOA)
+			
+			Event-driven Architecture
+			
+			Peer-to-peer (P2P) Architecture
+			
+			Scalable Architectures
+			
+			Load Balancing
+			
+			Caching Techniques
+
+
+
+	ION   
+	
+	IAP   
+	
+	IAP Tools for Java  
+	
+	Grid Ops for Java  
+	
+	SOA - Service Oriented Architecture   
+	
+	Web Services   
+	
+	SOAP   
+	
+	WSDL 2.0   
+	
+	RSync   
+	
+	Peer-to-Peer (P2P) Networks
+
+
+
+
+
+
+
+
+
+
+	
+	Java Concurrency/ ABHI On Java
+	——————————————————————————————
+	
+	Java 5 Concurrency 
+	
+	Java 5 Concurrency: Selecting Locks 
+	
+	Java 5 Concurrency: Selecting Synchronizers 
+	
+	Java 5 Concurrency: Synchronizers 
+	
+	Java 5 Concurrency: Conditions 
+	
+	Java 5 Concurrency: Reader-writer Locks 
+	
+	Java 5 Concurrency: Locks 
+	
+	Java 5 Concurrency: Callable And Future 
+	
+	Java 5 Executors: Threadpool 
+	
+	Java 5: New Features In Concurrency 
+	
+	Java: Handling Interrupts 
+
+	
+
+
+
+
+
 	
 	
 	
@@ -798,29 +964,50 @@
 	
 	
 	
+
+	Apache Kafka
 	————————————
-	APACHE KAFKA
-	————————————
-	——————————————————————————————————————————————————————————————————————————————————
-	APACHE KAFKA SERIES - LEARN APACHE KAFKA FOR BEGINNERS - STEPHANE MAAREK/ UDEMY 
+
+	Apache Kafka Series - Learn Apache Kafka For Beginners - Stephane Maarek/ Udemy 
 	
-	APACHE KAFKA SERIES - KAFKA CONNECT HANDS-ON LEARNING - STEPHANE MAAREK/ UDEMY 
+	Apache Kafka Series - Kafka Connect Hands-on Learning - Stephane Maarek/ Udemy 
 	
-	APACHE KAFKA SERIES - KAFKA STREAMS FOR DATA PROCESSING - STEPHANE MAAREK/ UDEMY 
+	Apache Kafka Series - Kafka Streams For Data Processing - Stephane Maarek/ Udemy 
 	
-	APACHE KAFKA SERIES - KAFKA SECURITY (SSL SASL KERBEROS ACL) - UDEMY 
+	Apache Kafka Series - Kafka Security (Ssl Sasl Kerberos Acl) - Udemy 
 	
-	APACHE KAFKA SERIES - CONFLUENT SCHEMA REGISTRY & REST PROXY - UDEMY 
+	Apache Kafka Series - Confluent Schema Registry & Rest Proxy - Udemy 
 	
-	APACHE KAFKA SERIES - KAFKA CLUSTER SETUP & ADMINISTRATION - STEPHANE MAAREK/ UDEMY 
+	Apache Kafka Series - Kafka Cluster Setup & Administration - Stephane Maarek/ Udemy 
 	
-	APACHE KAFKA SERIES - KAFKA MONITORING AND OPERATIONS - UDEMY 
-	——————————————————————————————————————————————————————————————————————————————————
+	Apache Kafka Series - Kafka Monitoring And Operations - Udemy
+
 	
 	
 
 
-	—————————————————————————————————————————————————————————————————————————
+
+
+
+
+	Blockchain And Cryptography
+	———————————————————————————
+
+	Learn Blockchain Technology & Cryptocurrency In Java - Udemy/ Holczer Balazs
+
+	Cryptography In Java - Udemy/ Holczer Balazs
+
+	Bitcoin And Cryptocurrency Technologies - Coursera/ Princeton University
+
+	Bitcoin And Cryptocurrency - Stanford University 
+
+
+
+
+
+
+
+
 	
 	LIGHTBEND/ COGNITIVECLASS 
 	—————————————————————————
@@ -1802,7 +1989,7 @@
 	- [Principles of Distributed Systems](http://dcg.ethz.ch/lectures/podc_allstars/lecture/podc.pdf) [Free] [ETH Zurich University]
 	- [Making reliable distributed systems in the presence of software errors](http://www.erlang.org/download/armstrong_thesis_2003.pdf), [Free] Joe Amstrong's (Author of Erlang) PhD thesis 
 	- [Designing Data Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321) [Amazon Link]
-	- [Distributed Computing, By Hagit Attiya and Jennifer Welch](http://hagit.net.technion.ac.il/publications/dc/)
+	- [Distributed Computing, By Hagit Attiya and Jennifer Welch](http://hagit.net.techNIOn.ac.il/publications/dc/)
 	- [Distributed Algorithms, Nancy Lynch](https://www.amazon.com/Distributed-Algorithms-Kaufmann-Management-Systems/dp/1558603484) [Amazon Link]
 	- [Impossibility Results for Distributed Computing](http://www.morganclaypool.com/doi/abs/10.2200/S00551ED1V01Y201311DCT012) (paywall)
 
