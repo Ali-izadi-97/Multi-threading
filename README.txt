@@ -964,6 +964,9 @@
 	
 	
 	
+	GCP: COMPLETE GOOGLE DATA ENGINEER AND CLOUD ARCHITECT GUIDE - UDEMY/ LOONY CORN
+
+	
 
 	Apache Kafka
 	————————————
@@ -1120,19 +1123,26 @@
 
 
 
-
-
-
 	
 	FUNCTIONAL PROGRAMMING
 	——————————————————————
-	
+
 	FUNCTIONAL PROGRAMMING WITH JAVA 8 - YOUTUBE/ VENKAT SUBRAMANIAM
-	
-	
-	
 
 
+	Functional Programming in Scala Specialization - EPFL
+	—————————————————————————————————————————————————————
+
+		Functional Programming Principles in Scala
+
+		Functional Program Design in Scala
+
+		Parallel programming
+
+		Big Data Analysis with Scala and Spark
+
+		Functional Programming in Scala Capstone
+		
 
 
 
