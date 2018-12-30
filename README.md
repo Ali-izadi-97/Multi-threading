@@ -1226,9 +1226,16 @@
 	JAVA PARALLELISM AND DISTRIBUTED COMPUTING SPECIALIZATION IN COURSERA
 	—————————————————————————————————————————————————————————————————————
 	
-	PARALLEL PROGRAMMING IN JAVA - COURSERA/ RICE UNIVERSITY 
-	CONCURRENT PROGRAMMING IN JAVA - COURSERA/ RICE UNIVERSITY 
-	DISTRIBUTED PROGRAMMING IN JAVA - COURSERA/ RICE UNIVERSITY 
+	Parallel Programming In Java - Coursera/ Rice University 
+	
+	Concurrent Programming In Java - Coursera/ Rice University 
+	
+	Distributed Programming In Java - Coursera/ Rice University 
+	
+		Distributed Map Reduce
+		Client-server Programming
+		Message Passing
+		Combining Distribution And Multi-threading
 	—————————————————————————————————————————————————————————————————————
 	
 
