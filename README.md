@@ -1843,15 +1843,51 @@
 	Vmlens Blog 
 	———————————
 
-	7 techniques for thread-safe classes - Vmlens 
+		7 techniques for thread-safe classes - Vmlens 
 
-	3 tips for volatile fields in java - Vmlens 
+		3 tips for volatile fields in java - Vmlens 
 
-	A new way to detect deadlocks during tests - Vmlens 
+		A new way to detect deadlocks during tests - Vmlens 
 
 
 	Thread Safe LIFO Data Structure Implementations - Baeldung
 	
+
+
+
+
+
+
+
+	Reactive Architecture: Foundations - Lightbend/ Cognitiveclass.ai
+	—————————————————————————————————————————————————————————————————
+
+
+
+		Reactive Architecture: Introduction to Reactive Systems
+
+		Reactive Architecture: Domain Driven Design
+
+		Reactive Architecture: Reactive Microservices
+
+
+
+
+	Reactive Architecture: Advanced - Lightbend/ Cognitiveclass.ai
+	——————————————————————————————————————————————————————————————
+
+
+		Reactive Architecture: Building Scalable Systems
+
+		Reactive Architecture: Distributed Messaging Patterns
+
+		Reactive Architecture: CQRS and Event Sourcing
+
+
+
+
+
+
 
 
 
@@ -1916,59 +1952,59 @@
 
 	BOOKS 
 	—————
-	
-	CONCURRENT PROGRAMMING IN JAVA: DESIGN PRINCIPLES AND PATTERNS - DOUG LEA 
-	
-	JAVA CONCURRENCY IN PRACTICE - BRIAN GOETZ
-	
-	7 CONCURRENCY MODELS IN 7 WEEKS: WHEN THREADS UNRAVEL - PAUL BUTCHER 
-	
-	JAVA 8 IN ACTION: LAMBDAS, STREAMS, AND FUNCTIONAL-STYLE PROGRAMMING - ALAN MYCROFT, MARIO FUSCO
-	
-	DISTRIBUTED ALGORITHMS BY PROF. NANCY LYNCH
-	
-	PROGRAMMING FOR THE JAVA™ VIRTUAL MACHINE - JOSHUA ENGEL
-	
-	DESIGNING DISTRIBUTED SYSTEMS: PATTERNS AND PARADIGMS FOR SCALABLE, RELIABLE SERVICES - BRENDAN BURNS/ OREILLY
-	
-	DESIGNING DATA-INTENSIVE APPLICATIONS: THE BIG IDEAS BEHIND RELIABLE, SCALABLE, AND MAINTAINABLE SYSTEMS - MARTIN KLEPPMANN
-	
-	KUBERNETES: UP AND RUNNING: DIVE INTO THE FUTURE OF INFRASTRUCTURE - KELSEY HIGHTOWER, BRENDAN BURNS, JOE BEDA
-	
-	JAVA DISTRIBUTED COMPUTING - JIM FARLEY/ O'REILLY MEDIA
-	
-	BUILDING REACTIVE MICROSERVICES IN JAVA BY CLEMENT ESCOER (OREILLY)
-	ASYNCHRONOUS AND EVENT-BASED APPLICATION DESIGN
-	
-	JAVA NETWORK PROGRAMMING: DEVELOPING NETWORKED APPLICATIONS - ELLIOTTE HAROLD
-	
-	APACHE MAHOUT: BEYOND MAPREDUCE - DMITRIY LYUBIMOV, ANDREW PALUMBO 
-	
-	MAPREDUCE DESIGN PATTERNS: BUILDING EFFECTIVE ALGORITHMS AND ANALYTICS FOR HADOOP AND OTHER SYSTEMS - DONALD MINER, ADAM SHOOK
+		
+		CONCURRENT PROGRAMMING IN JAVA: DESIGN PRINCIPLES AND PATTERNS - DOUG LEA 
+		
+		JAVA CONCURRENCY IN PRACTICE - BRIAN GOETZ
+		
+		7 CONCURRENCY MODELS IN 7 WEEKS: WHEN THREADS UNRAVEL - PAUL BUTCHER 
+		
+		JAVA 8 IN ACTION: LAMBDAS, STREAMS, AND FUNCTIONAL-STYLE PROGRAMMING - ALAN MYCROFT, MARIO FUSCO
+		
+		DISTRIBUTED ALGORITHMS BY PROF. NANCY LYNCH
+		
+		PROGRAMMING FOR THE JAVA™ VIRTUAL MACHINE - JOSHUA ENGEL
+		
+		DESIGNING DISTRIBUTED SYSTEMS: PATTERNS AND PARADIGMS FOR SCALABLE, RELIABLE SERVICES - BRENDAN BURNS/ OREILLY
+		
+		DESIGNING DATA-INTENSIVE APPLICATIONS: THE BIG IDEAS BEHIND RELIABLE, SCALABLE, AND MAINTAINABLE SYSTEMS - MARTIN KLEPPMANN
+		
+		KUBERNETES: UP AND RUNNING: DIVE INTO THE FUTURE OF INFRASTRUCTURE - KELSEY HIGHTOWER, BRENDAN BURNS, JOE BEDA
+		
+		JAVA DISTRIBUTED COMPUTING - JIM FARLEY/ O'REILLY MEDIA
+		
+		BUILDING REACTIVE MICROSERVICES IN JAVA BY CLEMENT ESCOER (OREILLY)
+		ASYNCHRONOUS AND EVENT-BASED APPLICATION DESIGN
+		
+		JAVA NETWORK PROGRAMMING: DEVELOPING NETWORKED APPLICATIONS - ELLIOTTE HAROLD
+		
+		APACHE MAHOUT: BEYOND MAPREDUCE - DMITRIY LYUBIMOV, ANDREW PALUMBO 
+		
+		MAPREDUCE DESIGN PATTERNS: BUILDING EFFECTIVE ALGORITHMS AND ANALYTICS FOR HADOOP AND OTHER SYSTEMS - DONALD MINER, ADAM SHOOK
 
-    Building Microservices: Designing Fine-Grained Systems - Sam Newman
+	    Building Microservices: Designing Fine-Grained Systems - Sam Newman
 
-    Reactive Messaging Patterns with the Actor Model: Applications and Integration in    Scala and Akka - Vaughn Vernon
+	    Reactive Messaging Patterns with the Actor Model: Applications and Integration in    Scala and Akka - Vaughn Vernon
 
-    Java™ Network Programming and Distributed Computing - Michael Reilly, David Reilly
+	    Java™ Network Programming and Distributed Computing - Michael Reilly, David Reilly
 
-	Distributed Computing in Java 9 - Raja Malleswara, Rao Pattamsetti/ Packt 
+		Distributed Computing in Java 9 - Raja Malleswara, Rao Pattamsetti/ Packt 
 
-	Concurrent and Distributed Computing in Java - Vijay K. Garg
+		Concurrent and Distributed Computing in Java - Vijay K. Garg
 
-	Java Distributed Computing - Jim Farley
+		Java Distributed Computing - Jim Farley
 
-	Distributed Computing with Go - V.N. Nikhil Anurag
-
-
-	Java Network Programming: Developing Networked Applications - Elliotte Rusty Harold
-
-	Java Performance: The Definitive Guide - Scott Oaks
-	
-	Java Performance Tuning - Jack Shirazi 
+		Distributed Computing with Go - V.N. Nikhil Anurag
 
 
-	High-Performance Java Persistence - Vlad Mihalcea
+		Java Network Programming: Developing Networked Applications - Elliotte Rusty Harold
+
+		Java Performance: The Definitive Guide - Scott Oaks
+		
+		Java Performance Tuning - Jack Shirazi 
+
+
+		High-Performance Java Persistence - Vlad Mihalcea
 	——————————————————————————————————————————————————————————————————————————————————————
 
 
