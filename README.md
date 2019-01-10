@@ -1859,6 +1859,41 @@
 
 
 
+	Event Sourcing, Distributed Systems & CQRS - - Sebastian Daschner/ Youtube
+	————————————————————————————————————————————————————————————————————————
+
+
+		Intro - Event Sourcing, Distributed Systems & CQRS
+
+		Shortcomings Of Crud - Event Sourcing, Distributed Systems & CQRS  
+
+		The Eventually Consistent Real-world - Event Sourcing, Distributed Systems & CQRS  
+
+		Event Sourcing - Event Sourcing, Distributed Systems & CQRS  
+
+		Benefits Of Event Sourced Architectures - Event Sourcing, Distributed Systems & CQRS  
+
+		Introduction To Event-driven Architectures - Event Sourcing, Distributed Systems & CQRS  
+
+		Introduction To CQRS - Event Sourcing, Distributed Systems & CQRS  
+
+		How To Build An Event Store - Event Sourcing, Distributed Systems & CQRS  
+
+		Scalable, Event-driven Coffee Shop - Event Sourcing, Distributed Systems & CQRS  
+
+		Implementation In Java Ee - Event Sourcing, Distributed Systems & CQRS  
+
+		Using Kafka With Java - Event Sourcing, Distributed Systems & CQRS  
+
+		Running The Scalable Coffee Shop - Event Sourcing, Distributed Systems & CQRS  
+
+		Outro - Event Sourcing, Distributed Systems & CQRS  
+
+
+
+	Containerizing Java EE 8 Apps Using Docker and Kubernetes - Sebastian Daschner/ Packt
+
+
 	Reactive Architecture: Foundations - Lightbend/ Cognitiveclass.ai
 	—————————————————————————————————————————————————————————————————
 
@@ -1930,6 +1965,9 @@
 
 	Serialization interview question and answer in Java - Benchresources
 	——————————————————————————————————————————————————————————————————————————
+
+
+
 
 
 
