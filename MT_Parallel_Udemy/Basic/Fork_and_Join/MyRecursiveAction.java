@@ -19,8 +19,7 @@ public class MyRecursiveAction extends RecursiveAction {
         if (this.workLoad > 16) {
             System.out.println("Splitting workLoad : " + this.workLoad);
 
-            List<MyRecursiveAction> subtasks =
-                    new ArrayList<MyRecursiveAction>();
+            List<MyRecursiveAction> subtasks = new ArrayList<MyRecursiveAction>();
 
             subtasks.addAll(createSubtasks());
 
@@ -33,9 +32,10 @@ public class MyRecursiveAction extends RecursiveAction {
         }
     }
 
+
     private List<MyRecursiveAction> createSubtasks() {
-        List<MyRecursiveAction> subtasks =
-                new ArrayList<MyRecursiveAction>();
+
+        List<MyRecursiveAction> subtasks = new ArrayList<MyRecursiveAction>();
 
         MyRecursiveAction subtask1 = new MyRecursiveAction(this.workLoad / 2);
         MyRecursiveAction subtask2 = new MyRecursiveAction(this.workLoad / 2);
@@ -55,5 +55,7 @@ public class MyRecursiveAction extends RecursiveAction {
 
         forkJoinPool.invoke(myRecursiveAction);
     }
-
 }
+
+
+

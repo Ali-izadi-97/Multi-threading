@@ -1053,6 +1053,10 @@
 	MEMORY MANAGEMENT AND GARBAGE COLLECTION IN JAVA - LYNDA 
 	
 	MANAGING THREADS IN JAVA - LYNDA
+
+	Efficient Java Multithreading with Executors - Udemy
+
+	Java Multithreading, Concurrency & Performance Optimization - UDEMY 
 	—————————————————————————————————————————————————————————————————————————————————————
 	
 	
@@ -1761,21 +1765,27 @@
 	JAVA SPECIALISTS TEACHABLE (https://javaspecialists.teachable.com)
 	—————————————————————————————————————————————————————————————————
 
-	Extreme Java Concurrency Performance (Java 8) - Java Specialists (By Dr. Heinz Kabutz)
-	
-	Java Concurrency in Practice Bundle - Java Specialists (By Dr. Heinz Kabutz)
+		Extreme Java Concurrency Performance (Java 8) - Java Specialists (By Dr. Heinz Kabutz)
+		
+		Java Concurrency in Practice Bundle - Java Specialists (By Dr. Heinz Kabutz)
 
-	Threading essentials - Java Specialists (By Dr. Heinz Kabutz)
-
-
-	Transmogrifier: Java NIO and Non-Blocking IO - Java Specialists (By Dr. Heinz Kabutz)
-
-	Refactoring to Java 8 Streams and Lambdas - Java Specialists (By Dr. Heinz Kabutz)
-
-	Transition to Continuous Delivery with Enterprise Java - Java Specialists (By Dr. Heinz Kabutz)
+		Threading essentials - Java Specialists (By Dr. Heinz Kabutz)
 
 
-	Data Structures in Java - Java Specialists (By Dr. Heinz Kabutz)
+		Transmogrifier: Java NIO and Non-Blocking IO - Java Specialists (By Dr. Heinz Kabutz)
+
+		Refactoring to Java 8 Streams and Lambdas - Java Specialists (By Dr. Heinz Kabutz)
+
+		Transition to Continuous Delivery with Enterprise Java - Java Specialists (By Dr. Heinz Kabutz)
+
+
+		Data Structures in Java - Java Specialists (By Dr. Heinz Kabutz)
+
+
+	JPA Persistance - Vlad Mihalcea
+	———————————————————————————————
+
+    	High-Performance Java Persistence Course - Vlad Mihalcea
 
 
 
@@ -2023,6 +2033,10 @@
 	    Building Microservices: Designing Fine-Grained Systems - Sam Newman
 
 	    Reactive Messaging Patterns with the Actor Model: Applications and Integration in    Scala and Akka - Vaughn Vernon
+
+
+        Reactive Programming with RxJava - Tomasz Nurkiewicz, Ben Christensen	    
+
 
 	    Java™ Network Programming and Distributed Computing - Michael Reilly, David Reilly
 

@@ -30,7 +30,6 @@ public class App {
      *
      * BarrierAction 2 executed
      *
-     *
      * Thread-0 done!
      * Thread-1 done!
      *
@@ -45,7 +44,6 @@ public class App {
             this.barrier1 = bar1;
             this.barrier2 = bar2;
         }
-
 
         public void run() {
 
@@ -72,21 +70,17 @@ public class App {
 
     public static void main(String[] args) throws InterruptedException {
 
-
         Runnable barrier1Action = new Runnable() {
-
             public void run() {
                 System.out.println("BarrierAction 1 executed ");
             }
         };
 
         Runnable barrier2Action = new Runnable() {
-
             public void run() {
                 System.out.println("BarrierAction 2 executed ");
             }
         };
-
 
         CyclicBarrier barrier1 = new CyclicBarrier(2, barrier1Action);
         CyclicBarrier barrier2 = new CyclicBarrier(2, barrier2Action);

@@ -10,9 +10,12 @@ import java.util.concurrent.Future;
 
 
 
+
+/*
 According to Wikipedia, Asynchronous programming is a means of parallel programming 
 in which a unit of work runs separately from the main application thread and notifies 
 the calling thread of its completion, failure or progress.
+
 
 Concurrency and Parallelism
 ---------------------------
@@ -32,7 +35,7 @@ processing units, essentially. In single core CPU, you may get concurrency but N
 parallelism.
 
 
----------------
+
 Futures in Java
 ---------------
 
@@ -56,7 +59,7 @@ involves extracting page-source, fetch the clean content, title and finally conv
 to Result object. The above logic is implemented in invokeCallable method.
 
 
-------------------
+
 Future Limitations
 ------------------
 
@@ -107,15 +110,16 @@ creating a CompletableFuture from a task, or building a CompletableFuture chain.
 API description 
 ---------------
 
-static <U> CompletableFuture<U> supplyAsync(Supplier<U> supplier)
+	static <U> CompletableFuture<U> supplyAsync(Supplier<U> supplier)
 
-	Returns a new CompletableFuture that is asynchronously completed by a task running 
-	in the ForkJoinPool.commonPool() with the value obtained by calling the given Supplier.
+		Returns a new CompletableFuture that is asynchronously completed by a task running 
+		in the ForkJoinPool.commonPool() with the value obtained by calling the given Supplier.
 
-static <U> CompletableFuture<U> supplyAsync(Supplier<U> supplier, Executor executor)
+	static <U> CompletableFuture<U> supplyAsync(Supplier<U> supplier, Executor executor)
 
-	Returns a new CompletableFuture that is asynchronously completed by a task running 
-	in the given executor with the value obtained by calling the given Supplier.
+		Returns a new CompletableFuture that is asynchronously completed by a task running 
+		in the given executor with the value obtained by calling the given Supplier.
+
 
 Supplier
 --------
@@ -126,15 +130,16 @@ Supplier instance and handed over to the supplyAsync() method, which would then 
 a CompletableFuture representing this task. This task would, by default, be executed 
 with one of the threads from the standard java.util.concurrent.ForkJoinPool 
 
-public static ForkJoinPool commonPool()
 
-	We can also provide custom thread pool by passing a java.util.concurrent.Executor 
-	instance and as such the Supplier tasks would be scheduled on threads from this Executor 
-	instance. Similarly we can also supply Runnable instances.
+	public static ForkJoinPool commonPool()
 
-static CompletableFuture<Void> runAsync(Runnable runnable)
+		We can also provide custom thread pool by passing a java.util.concurrent.Executor 
+		instance and as such the Supplier tasks would be scheduled on threads from this Executor 
+		instance. Similarly we can also supply Runnable instances.
 
-static CompletableFuture<Void> runAsync(Runnable runnable, Executor executor)
+	static CompletableFuture<Void> runAsync(Runnable runnable)
+
+	static CompletableFuture<Void> runAsync(Runnable runnable, Executor executor)
 
 
 
@@ -162,15 +167,15 @@ handy for this purpose.
 Summarizing Completable Future API
 ----------------------------------
 
-----------------------------------------------------------------------------------
-Methods	         |   Takes	          Returns
-----------------------------------------------------------------------------------
-thenApply(Async) |	Function	CompletionStage holding the result of the Function
-----------------------------------------------------------------------------------
-thenAccept(Async)| 	Consumer	CompletionStage<Void>
-----------------------------------------------------------------------------------
-thenRun(Async)	 | 	Runnable	CompletionStage<Void>
-----------------------------------------------------------------------------------
+|---------------------------------------------------------------------------------|
+|Methods	         |   Takes	          Returns      							  |
+|---------------------------------------------------------------------------------|
+|thenApply(Async) |	Function	CompletionStage holding the result of the Function|
+|---------------------------------------------------------------------------------|
+|thenAccept(Async)| 	Consumer	CompletionStage<Void>						  |
+|---------------------------------------------------------------------------------|
+|thenRun(Async)	 | 	Runnable	CompletionStage<Void>							  |
+|---------------------------------------------------------------------------------|
 
 
 
@@ -221,6 +226,7 @@ problem is that slow operation could never return. And it could be potential bot
 Instead of executing operations in parallel we need to wait on result of first operation. 
 The CompletableFuture here to help. Here is a simple use case for Future:
 
+
 	Future<Integer> priceA = callSlowService();
 	Future<Integer> priceB = callSlowService();
 
@@ -237,6 +243,7 @@ CompletableFuture was introduced in Java 8. Also it was available even before
 Java 8 in Guava or Spring Framework as the ListenableFuture. And here just few 
 examples what we can do with CompletableFuture. For more info check JavaDocs for 
 CompletableFuture and CompletionStage.
+
 
 	a. Combine several asynchronous operation
 
@@ -297,8 +304,10 @@ Lets run it and… you will be a little disappointed. The execution could be mor
 comparing with parallel stream one from step Two or could be the same(it is 6055 ms on 
 my machine). And here is the reason. Both solutions use theForkJoinPool.commonPool() 
 under the hood and use the number of threads equal to number of available processors: 
-Runtime.getRuntime().availableProcesssors(); So let’s see if we can do better with 
-custom threadpool.
+
+		Runtime.getRuntime().availableProcesssors(); 
+
+So let’s see if we can do better with custom threadpool.
 
 Here is our custom executor based solution. First we create the thread pool and then 
 pass it to CompletableFuture operation as a parameter. And result is 2034 ms. So we 
@@ -306,10 +315,13 @@ completed a long way from more than 18000 ms to 2000 ms.
 
 
 	public static ExecutorService es = Executors.newFixedThreadPool(Math.min(shops.size(), 100), r -> {
+
 	    Thread thread = new Thread(r);
 	    thread.setDaemon(true);
+
 	    return thread;
 	});
+
 
 	public static List<PriceRecord> findPricesCustomExecutor() {
 		
@@ -338,15 +350,16 @@ Try to figure out what you really want, may be simple paralleStream() is just mo
 suitable in your case. Remember ThreadPool size formula:
 
 	Nthreads = Ncpu * Ucpu * (1 + W/C)
-	Ncpu - number of cpus
-	Ucpu - cpu utilization
-	W/C - ration of wait to compute time			
-------------------------------------------------------------------------------------
+
+	where, 
+
+		Ncpu - number of cpus
+		Ucpu - cpu utilization
+		W/C - ration of wait to compute time	
+*/			
 
 
 
-
-------------------------------------------------------------------------------------
 
 class Processor implements Callable<String> {
 	
@@ -368,7 +381,6 @@ public class App {
 
 	
 	public static void main(String[] args) {
-
 		
 		ExecutorService executorService = Executors.newFixedThreadPool(2);
 		List<Future<String>> list = new ArrayList<>();

@@ -10,16 +10,21 @@ Look at producer/consumer (assumption is a ProducerConsumer class with two metho
 it uses notify) - yes it MAY work - even most of the time, but it may also cause deadlock - we will see 
 why:
 */
+public  class App {
 
-public  class App{
 	
 	public synchronized void put(Object o) {
 
 	    while (buf.size()==MAX_SIZE) {
-	        wait(); // called if the buffer is full (try/catch removed for brevity)
+
+	    	// called if the buffer is full (try/catch removed for brevity)
+	        wait(); 
 	    }
+
 	    buf.add(o);
-	    notify(); // called in case there are any getters or putters waiting
+
+	    // called in case there are any getters or putters waiting
+	    notify(); 
 	}
 
 	public synchronized Object get() {
@@ -29,8 +34,10 @@ public  class App{
 	        wait(); // called if the buffer is empty (try/catch removed for brevity)
 	        // X: this is where C1 tries to re-acquire the lock (see below)
 	    }
+
 	    Object o = buf.remove(0);
 	    notify(); // called if there are any getters or putters waiting
+
 	    return o;
 	}
 

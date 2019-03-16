@@ -4,9 +4,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 
-/*Tasks can be assigned to the ExecutorService using several methods, including 
+/*
+Tasks can be assigned to the ExecutorService using several methods, including 
 execute(), which is inherited from the Executor interface, and also submit(), 
-invokeAny(), invokeAll()
+invokeAny(), invokeAll():
+
 
 	a. The execute() method is void, and it doesn’t give any possibility to get the result 
 	of task’s execution or to check the task’s status (is it running or executed).
@@ -27,6 +29,7 @@ invokeAny(), invokeAll()
 	d. invokeAll() assigns a collection of tasks to an ExecutorService, causing each to 
 	be executed, and returns the result of all task executions in the form of a list of 
 	objects of type Future.
+
 		List<Future<String>> futures = executorService.invokeAll(callableTasks);
 
 
@@ -46,6 +49,7 @@ It will make the ExecutorService stop accepting new tasks and shut down after al
 running threads finish their current work.
 
 	executorService.shutdown();
+
 
 The shutdownNow() method tries to destroy the ExecutorService immediately, but it 
 doesn’t guarantee that all the running threads will be stopped at the same time. 
@@ -125,6 +129,7 @@ ScheduledExecutorService with one thread will be used:
 	ScheduledExecutorService executorService = Executors
 													.newSingleThreadScheduledExecutor();
 
+
 To schedule a single task’s execution after a fixed delay, us the scheduled() 
 method of the ScheduledExecutorService. There are two scheduled() methods that 
 allow you to execute Runnable or Callable tasks. The scheduleAtFixedRate() method 
@@ -144,7 +149,7 @@ the next:
 
 If it is necessary to have a fixed length delay between iterations of the task, 
 scheduleWithFixedDelay() should be used. For example, the following code will 
-guarantee a 150-millisecond pause between the end of the current execution and 
+guarantee a 150 ms pause between the end of the current execution and 
 the start of another one. 
 
 	service.scheduleWithFixedDelay(task, 100, 150, TimeUnit.MILLISECONDS);
@@ -165,6 +170,8 @@ as transactions or requests according to the scheme “one thread for one task.�
 
 In contrast, according to Oracle’s documentation, fork/join was designed to speed up 
 work which can be broken into smaller pieces recursively.
+
+
 
 
 
@@ -190,6 +197,8 @@ pitfalls. Let’s summarize them:
 	d. Unexpectedly-long blocking with Future‘s get() method: Timeouts should be used 
 	to avoid unexpected waits.
 */
+
+
 
 
 /**
@@ -219,19 +228,20 @@ pitfalls. Let’s summarize them:
 class Worker implements Runnable {
 
 
-		@Override
-		public void run() {
+	@Override
+	public void run() {
 
-			for(int i=0;i<10;i++){
+		for(int i=0;i<10;i++){
 
-				System.out.println(i);
-				try {
-					Thread.sleep(300);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
+			System.out.println(i);
+
+			try {
+				Thread.sleep(300);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
 			}
 		}
+	}
 }
 
 

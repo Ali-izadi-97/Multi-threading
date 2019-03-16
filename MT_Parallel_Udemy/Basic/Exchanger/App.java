@@ -1,17 +1,16 @@
 
-
 import java.util.concurrent.Exchanger;
 
 
 /*
- *
- * The java.util.concurrent.Exchanger class represents a kind of rendezvous point
- * where two threads can exchange objects.
+ * The java.util.concurrent.Exchanger class represents a kind 
+ * of rendezvous point where two threads can exchange objects.
  * */
 public class App {
 
 
     private static class ExThread implements Runnable {
+
 
         Exchanger exchanger = null;
         Object object = null;
@@ -36,13 +35,13 @@ public class App {
     }
 
 
+
     public static void main(String[] args) {
 
         Exchanger exchanger = new Exchanger();
 
         ExThread thread1 = new ExThread(exchanger, "A");
         ExThread thread2 = new ExThread(exchanger, "B");
-
 
         new Thread(thread1).start();
         new Thread(thread2).start();

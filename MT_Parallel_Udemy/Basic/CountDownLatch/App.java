@@ -22,12 +22,12 @@ import java.util.concurrent.CountDownLatch;
 public class App {
 
 
-//    The waiter is waiting
-//    The decrementer value = 1
-//    The decrementer value = 2
-//    The decrementer value = 3
-//    The waiting is completed
-//    Waiter Released
+    //    The waiter is waiting
+    //    The decrementer value = 1
+    //    The decrementer value = 2
+    //    The decrementer value = 3
+    //    The waiting is completed
+    //    Waiter Released
 
     private static class Waiter implements Runnable {
 
@@ -38,6 +38,7 @@ public class App {
         }
 
         public void run() {
+
             try {
 
                 System.out.println("The waiter is waiting");

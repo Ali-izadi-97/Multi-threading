@@ -10,7 +10,9 @@ import java.util.concurrent.RecursiveTask;
     Splitting workLoad : 64
     Splitting workLoad : 32
     Splitting workLoad : 32
-    Doing workLoad myself -: 16
+
+    Doing workLoad myself : 16
+
 
     Splitting workLoad : 32
     Doing workLoad myself -: 16
@@ -26,7 +28,10 @@ import java.util.concurrent.RecursiveTask;
     mergedResult = 384
 * */    
 
+
+
 public class MyRecursiveTask extends RecursiveTask<Long> {
+
 
     private long workLoad = 0;
 
@@ -64,9 +69,11 @@ public class MyRecursiveTask extends RecursiveTask<Long> {
             }
 
             long result = 0;
+
             for(MyRecursiveTask subtask : subtasks) {
                 result += subtask.join();
             }
+
             return result;
 
         } else {
@@ -74,6 +81,7 @@ public class MyRecursiveTask extends RecursiveTask<Long> {
             return workLoad * 3;
         }
     }
+
 
     private List<MyRecursiveTask> createSubtasks() {
         
@@ -92,7 +100,6 @@ public class MyRecursiveTask extends RecursiveTask<Long> {
     public static void main(String[] args) {
 
         ForkJoinPool forkJoinPool = new ForkJoinPool(4);
-
         MyRecursiveTask myRecursiveTask = new MyRecursiveTask(128);
 
         long mergedResult = forkJoinPool.invoke(myRecursiveTask);
